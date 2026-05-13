@@ -232,80 +232,254 @@ p { margin: 0; }
 }
 
 /* ==========================================================
-   HERO
+   HERO — cinematic full-bleed
    ========================================================== */
 .hero {
   position: relative;
-  padding-top: var(--s-6);
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
+  height: 100svh;
+  min-height: 620px;
+  max-width: none;
+  overflow: hidden;
+  background: #0e0c08;
+  color: #f3eadb;
+  isolation: isolate;
 }
-.hero-grid {
-  display: grid; gap: var(--s-5);
-  grid-template-columns: 1fr;
-  align-items: end;
+.hero-video {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: saturate(0.92) contrast(1.02) brightness(0.88);
 }
-.hero-copy {
-  padding-bottom: var(--s-5);
-  max-width: 720px;
+/* warm cinematic grade + readability */
+.hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(120% 80% at 50% 40%, rgba(184,115,64,0.18), transparent 60%),
+    linear-gradient(180deg, rgba(14,12,8,0.55) 0%, rgba(14,12,8,0.15) 30%, rgba(14,12,8,0.25) 65%, rgba(14,12,8,0.85) 100%);
+  z-index: 1;
+  pointer-events: none;
 }
-.hero h1 {
-  font-size: var(--t-h1);
-  margin-top: var(--s-4);
+/* film grain (very subtle, css only) */
+.hero::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 3px 3px;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-ui {
+  position: relative;
+  z-index: 4;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: clamp(16px, 2.4vw, 32px) clamp(20px, 4vw, 56px);
+  color: #f3eadb;
+}
+
+/* TOP BAR */
+.hero-top {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: var(--s-3);
+}
+.hero-rec {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+  color: rgba(243,234,219,0.78);
+}
+.hero-rec .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #c4502b; box-shadow: 0 0 12px rgba(196,80,43,0.8);
+  animation: rec-pulse 1.6s ease-in-out infinite;
+}
+@keyframes rec-pulse { 0%,100%{opacity:1} 50%{opacity:.35} }
+.hero-rec .sep { opacity: 0.4; }
+.hero-tc { font-variant-numeric: tabular-nums; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 16px;
+  border: 1px solid rgba(243,234,219,0.28);
+  border-radius: 999px;
+  background: rgba(20,16,10,0.28);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.26em; text-transform: uppercase;
+  color: rgba(243,234,219,0.92);
+}
+.hero-badge::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: #e8c890; box-shadow: 0 0 10px rgba(232,200,144,0.9);
+}
+
+/* MID — editorial block */
+.hero-mid {
+  align-self: end;
+  display: grid; gap: var(--s-3);
+  max-width: 760px;
+  padding-bottom: clamp(24px, 4vw, 56px);
+}
+.hero-chap {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase;
+  color: rgba(232,200,144,0.92);
+  display: flex; align-items: center; gap: 14px;
+}
+.hero-chap::after {
+  content: ""; width: 56px; height: 1px; background: rgba(232,200,144,0.55);
+}
+.hero-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(44px, 7vw + 8px, 112px);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: #f6ecd9;
   text-wrap: balance;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.35);
+}
+.hero-title em {
+  font-style: italic;
+  color: #e8c890;
+  font-weight: 400;
 }
 .hero-sub {
-  margin-top: var(--s-4);
-  font-size: var(--t-lead);
-  color: var(--ink-soft);
-  max-width: 52ch;
-  line-height: 1.5;
-  text-wrap: pretty;
+  max-width: 56ch;
+  font-size: clamp(14px, 0.6vw + 12px, 17px);
+  line-height: 1.55;
+  color: rgba(243,234,219,0.78);
+  margin: 0;
 }
 .hero-ctas {
-  display: flex; flex-wrap: wrap; gap: var(--s-2);
-  margin-top: var(--s-5);
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-top: var(--s-2);
 }
-.hero-meta {
-  margin-top: var(--s-5);
-  display: flex; flex-wrap: wrap; gap: var(--s-4) var(--s-5);
+.hero-ctas .btn {
+  background: #e8c890; color: #1a1408; border-color: transparent;
 }
-.hero-meta .item { display: flex; flex-direction: column; gap: 2px; }
-.hero-meta .v { font-family: var(--display); font-size: var(--t-num); font-weight: 500; line-height: 1; letter-spacing: -0.01em; }
-.hero-meta .k {
-  font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
-  color: var(--ink-mute);
+.hero-ctas .btn:hover { background: #f0d6a4; }
+.hero-ctas .btn.ghost {
+  background: transparent; color: #f3eadb;
+  border: 1px solid rgba(243,234,219,0.35);
 }
-.hero-art {
+.hero-ctas .btn.ghost:hover { border-color: #e8c890; color: #e8c890; }
+
+/* BOTTOM — category nav */
+.hero-bottom {
+  display: grid; gap: var(--s-3);
+  border-top: 1px solid rgba(243,234,219,0.18);
+  padding-top: clamp(14px, 1.6vw, 22px);
+}
+.hero-bottom-head {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.26em; text-transform: uppercase;
+  color: rgba(243,234,219,0.6);
+}
+.hero-cats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(8px, 1.5vw, 24px);
+  align-items: end;
+}
+.hero-cat {
   position: relative;
-  aspect-ratio: 16 / 11;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-  background: var(--bg-3);
-  box-shadow: var(--shadow-2);
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding: 14px 4px 16px;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(20px, 2.4vw + 6px, 44px);
+  line-height: 1;
+  color: rgba(243,234,219,0.78);
+  letter-spacing: -0.005em;
+  transition: color .35s var(--ease), transform .45s var(--ease);
+  border-top: 1px solid transparent;
 }
-.hero-art img, .hero-art video {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover;
+.hero-cat .num {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.22em;
+  color: rgba(232,200,144,0.7);
+  margin-right: 12px;
 }
-.hero-tag {
-  position: absolute; left: 16px; bottom: 16px;
-  padding: 8px 14px;
-  background: rgba(26,26,27,0.75);
-  backdrop-filter: blur(8px);
-  color: var(--paper);
-  font-family: var(--mono);
-  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
-  border-radius: 999px;
+.hero-cat .arrow {
+  font-family: var(--sans); font-size: 14px;
+  opacity: 0; transform: translateX(-6px);
+  transition: opacity .35s var(--ease), transform .35s var(--ease);
+  color: #e8c890;
 }
-@media (min-width: 880px) {
-  .hero { padding-top: var(--s-7); }
-  .hero-grid { grid-template-columns: 1fr 1fr; gap: var(--s-6); align-items: center; }
-  .hero-copy { padding-bottom: 0; }
-  .hero-art { aspect-ratio: 4 / 5; }
+.hero-cat::before {
+  content: ""; position: absolute; left: 0; right: 0; top: -1px;
+  height: 1px; background: #e8c890;
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .5s var(--ease);
 }
-@media (min-width: 1100px) {
-  .hero-grid { grid-template-columns: 1.05fr 1fr; gap: var(--s-7); }
-  .hero-art { aspect-ratio: 5 / 6; }
+.hero-cat:hover, .hero-cat.is-active { color: #f6ecd9; }
+.hero-cat:hover::before, .hero-cat.is-active::before { transform: scaleX(1); }
+.hero-cat:hover .arrow { opacity: 1; transform: translateX(0); }
+
+/* WIREFRAME GLOW — SVG overlay */
+.hero-wire {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.55;
+  mix-blend-mode: screen;
+}
+.hero-wire path, .hero-wire line, .hero-wire polyline {
+  fill: none;
+  stroke: #f1d9a8;
+  stroke-width: 1;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px rgba(241,217,168,0.55)) drop-shadow(0 0 10px rgba(232,180,110,0.35));
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+  animation: wire-draw 3.6s var(--ease) .4s forwards;
+}
+.hero-wire .w2 { animation-delay: 1s; }
+.hero-wire .w3 { animation-delay: 1.6s; }
+.hero-wire .corner {
+  stroke: rgba(243,234,219,0.55);
+  stroke-width: 1;
+  filter: none;
+  animation: none;
+  stroke-dasharray: none; stroke-dashoffset: 0;
+}
+@keyframes wire-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Reveal-on-load */
+.hero-mid > *, .hero-top > *, .hero-bottom { opacity: 0; transform: translateY(14px); animation: hero-in .9s var(--ease) forwards; }
+.hero-top > *:nth-child(1) { animation-delay: .1s; }
+.hero-top > *:nth-child(2) { animation-delay: .2s; }
+.hero-mid > *:nth-child(1) { animation-delay: .5s; }
+.hero-mid > *:nth-child(2) { animation-delay: .65s; }
+.hero-mid > *:nth-child(3) { animation-delay: .8s; }
+.hero-mid > *:nth-child(4) { animation-delay: .95s; }
+.hero-bottom { animation-delay: 1.1s; }
+@keyframes hero-in { to { opacity: 1; transform: translateY(0); } }
+
+/* Responsive */
+@media (max-width: 880px) {
+  .hero { min-height: 580px; }
+  .hero-ui { padding: 14px 18px; }
+  .hero-top { flex-wrap: wrap; gap: 10px; }
+  .hero-badge { padding: 8px 12px; font-size: 9.5px; letter-spacing: 0.2em; }
+  .hero-mid { padding-bottom: 24px; gap: 14px; }
+  .hero-chap::after { width: 32px; }
+  .hero-cats { grid-template-columns: 1fr; gap: 0; }
+  .hero-cat { padding: 12px 4px; font-size: 22px; border-top: 1px solid rgba(243,234,219,0.12); }
+  .hero-cat::before { display: none; }
+  .hero-bottom-head { font-size: 9.5px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-wire path, .hero-wire line, .hero-wire polyline { animation: none; stroke-dashoffset: 0; }
+  .hero-mid > *, .hero-top > *, .hero-bottom { animation: none; opacity: 1; transform: none; }
+  .hero-rec .dot { animation: none; }
 }
 
 /* ==========================================================
@@ -1005,42 +1179,86 @@ footer {
   </div>
 </div>
 
-<!-- =========== HERO =========== -->
-<header class="hero wrap" id="top" data-screen-label="01 hero">
-  <div class="hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">Cuisines · Dressings · Salles de bain · Maroc</span>
-      <h1>Votre cuisine,<br/>conçue <em>pour durer.</em></h1>
+<!-- =========== HERO — cinematic =========== -->
+<header class="hero" id="top" data-screen-label="01 hero">
+  <video class="hero-video" src="assets/hero.mp4" poster="assets/hero.jpg"
+         autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+
+  <!-- Architectural wireframe glow overlay -->
+  <svg class="hero-wire" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <!-- soft architectural lines (counter + island silhouette) -->
+    <path class="w1" d="M120,640 L520,640 L520,540 L980,540 L980,640 L1480,640" />
+    <path class="w2" d="M520,540 L520,360 M980,540 L980,360 M520,360 L980,360" />
+    <polyline class="w3" points="300,720 300,640 1300,640 1300,720" />
+    <!-- corner markers -->
+    <polyline class="corner" points="40,40 40,80 80,80" />
+    <polyline class="corner" points="1560,40 1560,80 1520,80" />
+    <polyline class="corner" points="40,860 40,820 80,820" />
+    <polyline class="corner" points="1560,860 1560,820 1520,820" />
+  </svg>
+
+  <div class="hero-ui">
+    <!-- TOP overlay -->
+    <div class="hero-top">
+      <div class="hero-rec" aria-hidden="true">
+        <span class="dot"></span><span>REC</span>
+        <span class="sep">·</span>
+        <span class="hero-tc" id="heroTC">00:00:04:12</span>
+        <span class="sep">·</span>
+        <span>24 FPS</span>
+      </div>
+      <div class="hero-badge">Du croquis à la réalité</div>
+    </div>
+
+    <!-- MID editorial -->
+    <div class="hero-mid">
+      <span class="hero-chap">01 — Esquisse</span>
+      <h1 class="hero-title">Votre cuisine,<br/>conçue <em>pour durer.</em></h1>
       <p class="hero-sub">
         Ecocina dessine, fabrique et pose des espaces sur mesure&nbsp;: caissons hydrofuges,
-        façades laquées, plans en quartz et céramique. De la première visite à la pose,
-        un seul interlocuteur — un seul standard&nbsp;: la précision.
+        façades laquées, plans en quartz et céramique. Un seul interlocuteur, un seul standard&nbsp;: la précision.
       </p>
       <div class="hero-ctas">
         <a class="btn" href="#contact">Devis gratuit en 48&nbsp;h <span class="arrow">→</span></a>
         <a class="btn ghost" href="#realisations">Voir les réalisations</a>
       </div>
-      <div class="hero-meta">
-        <div class="item">
-          <span class="v">10<small style="font-size:.5em; color: var(--ink-mute); font-family: var(--sans);">ans</small></span>
-          <span class="k">Garantie structure</span>
-        </div>
-        <div class="item">
-          <span class="v">48 h</span>
-          <span class="k">Devis chiffré</span>
-        </div>
-        <div class="item">
-          <span class="v">300+</span>
-          <span class="k">Projets livrés</span>
-        </div>
+    </div>
+
+    <!-- BOTTOM categories -->
+    <nav class="hero-bottom" aria-label="Catégories">
+      <div class="hero-bottom-head">
+        <span>Nos métiers</span>
+        <span>Casablanca · Maroc</span>
       </div>
-    </div>
-    <div class="hero-art">
-      <img src="assets/hero.jpg" alt="Cuisine signature Ecocina — esquisse et photoréaliste" />
-      <div class="hero-tag">Cuisine signature · Casablanca</div>
-    </div>
+      <div class="hero-cats">
+        <a href="#services" class="hero-cat is-active">
+          <span><span class="num">01</span>Cuisines</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#services" class="hero-cat">
+          <span><span class="num">02</span>Dressings</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="#services" class="hero-cat">
+          <span><span class="num">03</span>Salles de bain</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </nav>
   </div>
 </header>
+<script>
+  (function(){
+    var el = document.getElementById('heroTC');
+    if(!el) return;
+    var f = 0;
+    setInterval(function(){
+      f = (f + 1) % (24 * 60);
+      var s = Math.floor(f/24), fr = f%24;
+      el.textContent = '00:00:' + String(s).padStart(2,'0') + ':' + String(fr).padStart(2,'0');
+    }, 1000/24);
+  })();
+</script>
 
 <!-- =========== TRUST STRIP =========== -->
 <div class="trust" data-screen-label="trust">
