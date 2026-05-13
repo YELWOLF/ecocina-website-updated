@@ -16,6 +16,9 @@
    ============================================================ */
 
 :root {
+  /* viewport height fix for mobile (Safari dynamic viewport) */
+  --vh: 1vh;
+
   /* palette — kept brand DNA, refined for AA contrast */
   --bg:        #f5f1e8;      /* warm cream, lifted */
   --bg-2:      #ece6d6;
@@ -239,6 +242,7 @@ p { margin: 0; }
   padding: 0;
   margin: 0;
   height: 100svh;
+  height: calc(100 * var(--vh));
   min-height: 620px;
   max-width: none;
   overflow: hidden;
@@ -429,6 +433,9 @@ p { margin: 0; }
   opacity: 0.55;
   mix-blend-mode: screen;
 }
+@media (max-width: 640px) {
+  .hero-wire { opacity: 0.35; }
+}
 .hero-wire path, .hero-wire line, .hero-wire polyline {
   fill: none;
   stroke: #f1d9a8;
@@ -466,15 +473,32 @@ p { margin: 0; }
 /* Responsive */
 @media (max-width: 880px) {
   .hero { min-height: 580px; }
-  .hero-ui { padding: 14px 18px; }
-  .hero-top { flex-wrap: wrap; gap: 10px; }
+  .hero-ui { padding: 14px 16px; }
+  .hero-top { flex-direction: column; gap: 12px; align-items: flex-start; }
   .hero-badge { padding: 8px 12px; font-size: 9.5px; letter-spacing: 0.2em; }
-  .hero-mid { padding-bottom: 24px; gap: 14px; }
+  .hero-mid { padding-bottom: 20px; gap: 14px; max-width: 100%; }
+  .hero-title { text-wrap: pretty; }
   .hero-chap::after { width: 32px; }
-  .hero-cats { grid-template-columns: 1fr; gap: 0; }
-  .hero-cat { padding: 12px 4px; font-size: 22px; border-top: 1px solid rgba(243,234,219,0.12); }
+  .hero-cats { grid-template-columns: 1fr; gap: 0; margin-top: var(--s-2); }
+  .hero-cat { padding: 14px 12px; font-size: clamp(18px, 4vw, 24px); border-top: 1px solid rgba(243,234,219,0.12); touch-action: manipulation; }
   .hero-cat::before { display: none; }
-  .hero-bottom-head { font-size: 9.5px; }
+  .hero-bottom-head { font-size: 9.5px; padding-bottom: var(--s-2); }
+  .hero-ctas { gap: 10px; }
+  .hero-ctas .btn { min-height: 44px; font-size: 15px; }
+}
+
+@media (max-width: 540px) {
+  .hero { min-height: 640px; }
+  .hero-ui { padding: 12px 14px; grid-template-rows: auto 1fr auto; }
+  .hero-rec { font-size: 10px; gap: 8px; }
+  .hero-title { font-size: clamp(32px, 6vw, 48px); line-height: 1.1; }
+  .hero-sub { font-size: 13px; line-height: 1.5; }
+  .hero-mid { padding-bottom: 16px; }
+  .hero-ctas { flex-direction: column; width: 100%; }
+  .hero-ctas .btn { width: 100%; text-align: center; padding: 16px 18px; }
+  .form { padding: var(--s-3); gap: var(--s-2); }
+  .field input, .field select, .field textarea { padding: 14px 12px; }
+  .form-actions { gap: 10px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-wire path, .hero-wire line, .hero-wire polyline { animation: none; stroke-dashoffset: 0; }
@@ -1213,7 +1237,7 @@ footer {
     <!-- MID editorial -->
     <div class="hero-mid">
       <span class="hero-chap">01 — Esquisse</span>
-      <h1 class="hero-title">Votre cuisine,<br/>conçue <em>pour durer.</em></h1>
+      <h1 class="hero-title">Votre cuisine, conçue <em>pour durer.</em></h1>
       <p class="hero-sub">
         Ecocina dessine, fabrique et pose des espaces sur mesure&nbsp;: caissons hydrofuges,
         façades laquées, plans en quartz et céramique. Un seul interlocuteur, un seul standard&nbsp;: la précision.
@@ -1931,6 +1955,15 @@ footer {
   closeBtn?.addEventListener('click', closeDrawer);
   drawer?.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+
+  // Mobile viewport fix (Safari dynamic viewport height)
+  const setVH = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  };
+  setVH();
+  window.addEventListener('resize', setVH, { passive: true });
+  window.addEventListener('orientationchange', setVH, { passive: true });
 
   // Reveal on scroll
   if ('IntersectionObserver' in window) {
