@@ -833,8 +833,34 @@ p { margin: 0; }
   border: 1px solid var(--line-soft);
   position: relative;
   min-height: 240px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+}
+.step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(61,82,64,0.12);
+  border-color: var(--accent);
 }
 @media (min-width: 1100px) { .step { border-radius: 0; border: 0; } }
+@media (min-width: 1100px) { .step:hover { border-color: var(--accent); border-bottom: 2px solid var(--accent); } }
+.step::before {
+  content: attr(data-n);
+  position: absolute; bottom: -8px; right: 12px;
+  font-family: var(--serif); font-size: 96px; font-weight: 700;
+  color: color-mix(in srgb, var(--accent) 6%, transparent);
+  line-height: 1; pointer-events: none; user-select: none;
+  z-index: 0;
+}
+.step > * { position: relative; z-index: 1; }
+.step-icon {
+  width: 44px; height: 44px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-bottom: var(--s-1);
+}
 .step .num {
   font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em;
   color: var(--accent);
@@ -2353,31 +2379,69 @@ footer {
   </div>
 
   <div class="steps">
-    <div class="step" data-reveal>
+    <div class="step" data-reveal data-n="01">
+      <div class="step-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+      </div>
       <span class="num">— Étape 01</span>
       <h4>Visite &amp; relevé</h4>
       <p>Rendez-vous à votre domicile ou en showroom. Relevé millimétré, prise des contraintes techniques, premier brief design.</p>
       <span class="dur">≈ 1 h · Gratuit</span>
     </div>
-    <div class="step" data-reveal>
+    <div class="step" data-reveal data-n="02">
+      <div class="step-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 3h18v18H3z"></path>
+          <path d="M9 3v18M15 3v18M3 9h18M3 15h18"></path>
+        </svg>
+      </div>
       <span class="num">— Étape 02</span>
       <h4>Plan 3D &amp; devis</h4>
       <p>Plan technique, visuel 3D photoréaliste, devis détaillé poste par poste. Vous voyez le projet exactement comme il sera posé.</p>
       <span class="dur">≈ 48 h · Sans engagement</span>
     </div>
-    <div class="step" data-reveal>
+    <div class="step" data-reveal data-n="03">
+      <div class="step-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="1"></circle>
+          <circle cx="19" cy="12" r="1"></circle>
+          <circle cx="5" cy="12" r="1"></circle>
+          <circle cx="12" cy="5" r="1"></circle>
+          <circle cx="12" cy="19" r="1"></circle>
+          <circle cx="17.66" cy="6.34" r="1"></circle>
+          <circle cx="6.34" cy="17.66" r="1"></circle>
+          <circle cx="17.66" cy="17.66" r="1"></circle>
+          <circle cx="6.34" cy="6.34" r="1"></circle>
+        </svg>
+      </div>
       <span class="num">— Étape 03</span>
       <h4>Choix matières</h4>
       <p>Au showroom, vous touchez chaque façade, chaque plan, chaque finition. Pas de catalogue papier — seulement des échantillons réels.</p>
       <span class="dur">≈ 1 séance · Inclus</span>
     </div>
-    <div class="step" data-reveal>
+    <div class="step" data-reveal data-n="04">
+      <div class="step-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="8"></circle>
+          <path d="M12 8v4l3 2"></path>
+          <path d="M9.5 6.5l1.4 1.4M14.5 6.5l-1.4 1.4"></path>
+        </svg>
+      </div>
       <span class="num">— Étape 04</span>
       <h4>Fabrication atelier</h4>
       <p>Découpe, chants, montage. Vous recevez des photos d'étape chaque semaine. Aucun module ne quitte l'atelier sans contrôle.</p>
       <span class="dur">3 à 5 semaines</span>
     </div>
-    <div class="step" data-reveal>
+    <div class="step" data-reveal data-n="05">
+      <div class="step-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10"></path>
+          <path d="M11 16l-3-3 1-1 2 2 5-5 1 1-6 6z"></path>
+        </svg>
+      </div>
       <span class="num">— Étape 05</span>
       <h4>Pose &amp; réception</h4>
       <p>Pose par nos équipes en 2 à 4 jours. Réception contradictoire, mise en service, remise du carnet de garantie et des notices.</p>
