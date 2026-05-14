@@ -91,7 +91,7 @@ class PortfolioGallery {
       <div class="portfolio-item" data-index="${idx}" data-video="kitchen-${idx + 1}">
         <div class="portfolio-item-video-wrapper">
           <video class="portfolio-item-video" muted playsinline>
-            <source src="./videos updated/kitchen-${idx + 1}.mp4" type="video/mp4">
+            <source src="./videos/kitchen-${idx + 1}.mp4" type="video/mp4">
           </video>
         </div>
         <div class="portfolio-item-overlay">
