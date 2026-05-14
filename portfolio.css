@@ -56,13 +56,13 @@
 .portfolio-item {
   display: flex;
   flex-direction: row;
-  min-height: 60vh;
   border-top: 1px solid rgba(26,26,27,0.12);
-  padding: 80px 0;
+  padding: 80px var(--pad-x);
   background: var(--bg);
   overflow: visible;
   opacity: 1;
-  align-items: stretch;
+  align-items: center;
+  gap: clamp(40px, 6vw, 96px);
 }
 
 .portfolio-item:nth-child(even) {
@@ -75,13 +75,15 @@
 
 .portfolio-item-video-wrapper {
   position: relative;
-  flex: 0 0 55%;
-  height: 60vh;
+  flex: 0 0 clamp(260px, 30vw, 440px);
+  aspect-ratio: 4 / 5;
   background: #000;
   overflow: hidden;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: var(--shadow-2);
 }
 
 .portfolio-item-video {
@@ -89,13 +91,18 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 600ms var(--port-ease);
+}
+
+.portfolio-item:hover .portfolio-item-video {
+  transform: scale(1.03);
 }
 
 /* Content overlay ------------------------------------------ */
 .portfolio-item-overlay {
   position: relative;
   flex: 1;
-  padding: 48px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -352,35 +359,24 @@
 }
 
 /* Responsive -------------------------------------------- */
-@media (max-width: 768px) {
-  .portfolio-hero {
-    height: 50vh;
-    margin-bottom: var(--gap-md);
-  }
-
+@media (max-width: 900px) {
   .portfolio-item,
   .portfolio-item:nth-child(even) {
     flex-direction: column;
-    min-height: auto;
-    padding: 60px 0;
+    padding: 60px var(--pad-x);
+    gap: 32px;
+    align-items: flex-start;
   }
 
   .portfolio-item-video-wrapper {
     flex: none;
     width: 100%;
-    height: 50vh;
-  }
-
-  .portfolio-item-overlay {
-    padding: 40px;
-  }
-
-  .portfolio-item-title {
-    font-size: var(--t-h4);
+    max-width: 480px;
+    aspect-ratio: 4 / 5;
   }
 
   .portfolio-item-details {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--gap-md);
   }
 
@@ -403,17 +399,15 @@
     font-size: var(--t-h3);
   }
 
-  .portfolio-item {
-    min-height: auto;
-    padding: 40px 0;
+  .portfolio-item,
+  .portfolio-item:nth-child(even) {
+    padding: 40px var(--pad-x);
+    gap: 24px;
   }
 
   .portfolio-item-video-wrapper {
-    height: 45vh;
-  }
-
-  .portfolio-item-overlay {
-    padding: 24px;
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
   }
 
   .portfolio-item-title {
@@ -421,6 +415,7 @@
   }
 
   .portfolio-item-details {
+    grid-template-columns: 1fr;
     gap: var(--gap-md);
     margin-top: var(--s-4);
   }
