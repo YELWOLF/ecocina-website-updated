@@ -606,6 +606,12 @@ p { margin: 0; }
   background-image:
     repeating-linear-gradient(45deg, rgba(0,0,0,0.04) 0 1px, transparent 1px 14px);
 }
+.service-img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .service-art.k1 .ph { background-color: #2a2a2c; }
 .service-art.k2 .ph { background-color: #b58c5d; }
 .service-art.k3 .ph { background-color: #d9d3c5; }
@@ -2039,6 +2045,7 @@ footer {
   <div class="services-grid">
     <article class="service" data-reveal>
       <div class="service-art k1">
+        <img src="uploads/cuisines" alt="Cuisines sur mesure - Ecocina" class="service-img">
         <div class="ph"></div>
         <span class="lab">Cuisines</span>
       </div>
@@ -2051,6 +2058,7 @@ footer {
 
     <article class="service" data-reveal>
       <div class="service-art k2">
+        <img src="uploads/dressings" alt="Dressings sur mesure - Ecocina" class="service-img">
         <div class="ph"></div>
         <span class="lab">Dressings</span>
       </div>
@@ -2063,6 +2071,7 @@ footer {
 
     <article class="service" data-reveal>
       <div class="service-art k3">
+        <img src="uploads/salles de bain" alt="Salles de bain sur mesure - Ecocina" class="service-img">
         <div class="ph"></div>
         <span class="lab">Salles de bain</span>
       </div>
