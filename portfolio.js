@@ -8,57 +8,57 @@ class PortfolioGallery {
     this.projects = [
       {
         id: 'kitchen-1',
-        title: 'Terracotta Minimalism',
-        location: 'Marrakech',
-        materials: 'Natural oak, quartz, ceramic tile',
-        philosophy: 'Embracing earth tones and minimal forms to create a serene cooking sanctuary.',
-        optimization: 'Custom cabinetry maximizes vertical storage while maintaining visual lightness.',
-        details: 'Hand-finished hardware, integrated lighting, space-optimized corner solutions.'
+        title: 'Anthracite Mat & Céramique',
+        location: 'Réalisation Ecocina',
+        materials: 'Façade gris anthracite mat Woodimp 22 mm · Caisson hydrofuge gris · Plan céramique Calacatta Grey',
+        philosophy: 'Une cuisine épurée où le gris anthracite mat s\'impose avec caractère, adouci par les veines claires du Calacatta Grey.',
+        optimization: 'Accessoires d\'angle optimisés pour un rangement maximal sans compromis esthétique.',
+        details: 'Façade Woodimp 22 mm haute densité · Caisson hydrofuge gris · Plan céramique Calacatta Grey · Ferrures de coin intégrées.'
       },
       {
         id: 'kitchen-2',
-        title: 'Alpine Monochrome',
-        location: 'Casablanca',
-        materials: 'Lacquered white, stainless steel, light oak',
-        philosophy: 'Clean lines and neutral palette that elevates the art of the everyday.',
-        optimization: 'Seamless integration of appliances into monolithic cabinetry design.',
-        details: 'Soft-close mechanisms, hidden handles, bespoke worktop transitions.'
+        title: 'Noyer & Verre Fumé',
+        location: 'Réalisation Ecocina',
+        materials: 'Noyer américain Egger · Noir mat Egger 18 mm · Portes verre sécurit fumé · Plan Dekton Orinika',
+        philosophy: 'Le mariage du noyer américain et du noir mat crée un contraste saisissant, sublimé par la transparence du verre fumé.',
+        optimization: 'Portes en verre sécurit fumé pour alléger visuellement l\'ensemble tout en préservant l\'intimité du rangement.',
+        details: 'Noyer américain Egger · Noir mat Egger 18 mm · Verre sécurit fumé · Plan Dekton Orinika ultra-résistant.'
       },
       {
         id: 'kitchen-3',
-        title: 'Forest Sanctuary',
-        location: 'Fez',
-        materials: 'Walnut veneer, black granite, bronze hardware',
-        philosophy: 'Dark, rich materials balanced with abundant natural light and open shelving.',
-        optimization: 'Floating shelves and open design create breathing room in intimate spaces.',
-        details: 'Sculptural handles, integrated spice storage, concealed electrical outlets.'
+        title: 'Gris Clair Brillant & Lattes',
+        location: 'Réalisation Ecocina',
+        materials: 'Façade gris clair high-gloss Woodipro · Caisson en bois latté · Plan Coverlam grand format',
+        philosophy: 'La brillance du gris clair s\'allie à la chaleur naturelle du caisson en bois latté pour une cuisine lumineuse et contemporaine.',
+        optimization: 'Caisson en bois latté alliant robustesse structurelle et esthétique naturelle authentique.',
+        details: 'Façade high-gloss Woodipro · Caisson bois latté 18 mm · Plan Coverlam grand format résistant à la chaleur.'
       },
       {
         id: 'kitchen-4',
-        title: 'Coastal Serenity',
-        location: 'Essaouira',
-        materials: 'Washed grey oak, white quartz, brushed brass',
-        philosophy: 'Inspired by nearby ocean—soft grays with warm metallic accents.',
-        optimization: 'Island-centric layout maximizes workflow efficiency and social space.',
-        details: 'Custom island seating, integrated wine cooler, architectural toe-kick design.'
+        title: 'Bimatière Ice & Boisé',
+        location: 'Réalisation Ecocina',
+        materials: 'Façade Ice gris mat Woodimp 22 mm · Boisé Richmond 22 mm · Plan quartz Compac Luna',
+        philosophy: 'Un dialogue élégant entre le gris glacé et le boisé Richmond — deux textures complémentaires qui réchauffent l\'espace.',
+        optimization: 'Association bimatière étudiée pour délimiter les zones fonctionnelles tout en gardant une lecture visuelle cohérente.',
+        details: 'Ice gris mat Woodimp 22 mm · Boisé Richmond 22 mm · Plan quartz Compac Luna · Finition haut de gamme.'
       },
       {
         id: 'kitchen-5',
-        title: 'Luxury Restraint',
-        location: 'Rabat',
-        materials: 'Matte black lacquer, Calacatta marble, satin nickel',
-        philosophy: 'Luxury through subtraction—every element serves purpose and beauty.',
-        optimization: 'Under-cabinet lighting and organizational systems ensure clutter-free aesthetics.',
-        details: 'Integrated range hood, marble waterfall edge, luxury hardware sourcing.'
+        title: 'Chêne & Laqué Blanc Brillant',
+        location: 'Réalisation Ecocina',
+        materials: 'Façade Egger chêne poignée intégrée · Laqué blanc brillant 5 couches · Plan quartz Estatuario',
+        philosophy: 'La douceur du chêne naturel face à l\'éclat du blanc laqué — un équilibre entre chaleur et sophistication pure.',
+        optimization: 'Poignée intégrée sur façade chêne pour une ligne continue et un geste d\'ouverture intuitif.',
+        details: 'Façade Egger chêne profil J · Laqué blanc brillant 5 couches · Plan quartz Estatuario veiné · Finition sans poignée apparente.'
       },
       {
         id: 'kitchen-6',
-        title: 'Warm Geometries',
-        location: 'Tangier',
-        materials: 'Terracotta-toned lacquer, engineered marble, natural brass',
-        philosophy: 'Architectural geometry meets warmth—contemporary design with soul.',
-        optimization: 'Custom modular cabinetry adapts to complex space constraints.',
-        details: 'Hand-crafted tile work, bespoke corner solutions, integrated herb garden.'
+        title: 'Gris Luna & Boisé Walnut',
+        location: 'Réalisation Ecocina',
+        materials: 'Façade gris Luna · Accent boisé Walnut · Plan quartz Ice Grey Compac',
+        philosophy: 'Le gris Luna posé comme base neutre, réveillé par une touche de boisé Walnut — une composition raffinée aux accents naturels.',
+        optimization: 'L\'accent boisé positionné stratégiquement crée un point focal sans alourdir la composition.',
+        details: 'Façade gris Luna · Boisé Walnut en touche d\'accent · Plan quartz Ice Grey Compac · Harmonie froide-chaude maîtrisée.'
       }
     ];
 
@@ -101,24 +101,24 @@ class PortfolioGallery {
             <div class="portfolio-item-divider"></div>
             <div class="portfolio-item-details">
               <div class="detail-item">
-                <div class="detail-label">Materials</div>
+                <div class="detail-label">Matériaux</div>
                 <div class="detail-value">${project.materials}</div>
               </div>
               <div class="detail-item">
-                <div class="detail-label">Philosophy</div>
+                <div class="detail-label">Concept</div>
                 <div class="detail-value">${project.philosophy}</div>
               </div>
               <div class="detail-item">
-                <div class="detail-label">Space Optimization</div>
+                <div class="detail-label">Optimisation</div>
                 <div class="detail-value">${project.optimization}</div>
               </div>
               <div class="detail-item">
-                <div class="detail-label">Details</div>
+                <div class="detail-label">Détails</div>
                 <div class="detail-value">${project.details}</div>
               </div>
             </div>
             <button class="portfolio-cta" onclick="portfolioGallery.scrollToCloser()">
-              Discover My Process
+              Découvrir notre approche
               <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="opacity: 0.6;">
                 <path d="M1 8h12m-3-3l3 3-3 3"/>
               </svg>
