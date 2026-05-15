@@ -1659,7 +1659,7 @@ footer {
 .why-us {
   background: var(--accent);
   color: var(--paper);
-  padding: var(--s-6) var(--pad-x);
+  padding: var(--s-7) var(--pad-x);
 }
 .why-us-inner {
   max-width: var(--maxw);
@@ -1672,6 +1672,8 @@ footer {
   text-transform: uppercase;
   opacity: 0.7;
   margin-bottom: var(--s-4);
+  border-left: 3px solid var(--warm);
+  padding-left: var(--s-2);
 }
 .why-us-grid {
   display: grid;
@@ -1679,12 +1681,31 @@ footer {
   gap: var(--s-4) var(--s-5);
 }
 @media (min-width: 680px) {
-  .why-us-grid { grid-template-columns: repeat(4, 1fr); }
+  .why-us-grid { grid-template-columns: repeat(4, 1fr); gap: var(--s-5) var(--s-6); }
 }
-.why-item {}
-.why-icon {
-  font-size: 28px;
+.why-item {
+  border-top: 1px solid rgba(251,248,241,0.15);
+  padding-top: var(--s-3);
+}
+.why-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--warm);
+  display: block;
   margin-bottom: var(--s-2);
+  font-weight: 600;
+}
+.why-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(251,248,241,0.08);
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  margin-bottom: var(--s-3);
 }
 .why-title {
   font-family: var(--display);
@@ -1692,11 +1713,12 @@ footer {
   font-weight: 500;
   margin-bottom: var(--s-1);
   line-height: 1.1;
+  margin-top: var(--s-2);
 }
 .why-desc {
   font-size: 14px;
-  opacity: 0.78;
-  line-height: 1.55;
+  opacity: 0.72;
+  line-height: 1.6;
 }
 
 /* ==========================================================
@@ -1977,8 +1999,8 @@ footer {
       <div class="lg">BLUM</div>
       <div class="lg">Egger</div>
       <div class="lg">Dossia</div>
+      <div class="lg">Alvic</div>
       <div class="lg">Bosch</div>
-      <div class="lg">Smeg</div>
       <div class="lg">Liebherr</div>
       <div class="lg">Falmec</div>
       <div class="lg">Teka</div>
@@ -1992,21 +2014,25 @@ footer {
     <div class="why-us-label">Pourquoi Ecocina</div>
     <div class="why-us-grid">
       <div class="why-item" data-reveal>
+        <span class="why-num">01</span>
         <div class="why-icon">🏭</div>
         <div class="why-title">Sourcing Espagne</div>
         <div class="why-desc">Caissons et portes sélectionnés auprès de fournisseurs espagnols certifiés. Pose et finitions réalisées par nos équipes au Maroc.</div>
       </div>
       <div class="why-item" data-reveal>
+        <span class="why-num">02</span>
         <div class="why-icon">🛡️</div>
         <div class="why-title">Garantie 10 Ans</div>
         <div class="why-desc">Structure complète garantie une décennie. Panneaux, assemblages, fond et chants couverts.</div>
       </div>
       <div class="why-item" data-reveal>
+        <span class="why-num">03</span>
         <div class="why-icon">🔧</div>
         <div class="why-title">SAV à Vie</div>
         <div class="why-desc">Pièces d'usure remplaçables au prix coûtant à vie. Notre relation ne s'arrête pas à la pose.</div>
       </div>
       <div class="why-item" data-reveal>
+        <span class="why-num">04</span>
         <div class="why-icon">📐</div>
         <div class="why-title">Devis 3D Offert</div>
         <div class="why-desc">Plan 3D photoréaliste et devis chiffré gratuits en 48 h — aucun engagement de votre côté.</div>
