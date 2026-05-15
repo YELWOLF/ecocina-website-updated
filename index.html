@@ -933,51 +933,58 @@ p { margin: 0; }
 }
 
 /* ==========================================================
-   TESTIMONIALS
+   CONTACT FORM SECTION
    ========================================================== */
-.kudos { background: var(--bg); }
-.kudos-grid {
-  display: grid; gap: var(--gap-md);
-  grid-template-columns: 1fr;
+.contact-form-section { background: var(--bg); }
+.contact-form {
+  display: flex; flex-direction: column; gap: var(--s-4);
+  max-width: 760px;
+  margin-top: var(--s-6);
 }
-@media (min-width: 640px) { .kudos-grid { grid-template-columns: repeat(2, 1fr); gap: var(--s-3); } }
-@media (min-width: 980px) { .kudos-grid { grid-template-columns: repeat(3, 1fr); } }
-.quote {
-  background: var(--paper);
-  padding: var(--s-4);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--line-soft);
-  display: flex; flex-direction: column; gap: var(--s-3);
+.form-row {
+  display: grid; grid-template-columns: 1fr; gap: var(--s-4);
 }
-.quote .stars { color: var(--warm); letter-spacing: 2px; font-size: 14px; }
-.quote blockquote {
-  margin: 0;
-  font-family: var(--display);
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: -0.005em;
-  color: var(--ink);
-  flex: 1;
-  text-wrap: pretty;
+@media (min-width: 640px) { .form-row { grid-template-columns: 1fr 1fr; } }
+.form-group {
+  display: flex; flex-direction: column; gap: var(--s-1);
 }
-.quote-foot {
-  display: flex; align-items: center; gap: var(--s-2);
-  padding-top: var(--s-2);
-  border-top: 1px solid var(--line-soft);
-}
-.avatar {
-  width: 40px; height: 40px;
-  border-radius: 999px;
-  background: var(--accent);
-  color: var(--paper);
-  font-family: var(--display);
-  font-size: 16px;
-  display: inline-flex; align-items: center; justify-content: center;
+.form-group label {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
   font-weight: 500;
 }
-.quote-foot .who { font-size: 14px; font-weight: 500; }
-.quote-foot .where { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--ink-mute); text-transform: uppercase; }
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm, 6px);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.18s;
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+.form-group select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+}
+.form-group input::placeholder { color: var(--ink-mute); opacity: 0.6; }
+.form-group input:focus,
+.form-group select:focus { border-color: var(--accent); }
+.btn.form-submit {
+  align-self: flex-start;
+  margin-top: var(--s-2);
+}
 
 /* ==========================================================
    FAQ
@@ -2508,66 +2515,52 @@ footer {
   </button>
 </section>
 
-<!-- =========== TESTIMONIALS =========== -->
-<section class="kudos wrap" data-screen-label="09 testimonials">
+<!-- =========== CONTACT FORM =========== -->
+<section class="contact-form-section wrap" data-screen-label="09 contact-form">
   <div class="shead">
     <div>
-      <span class="eyebrow" data-reveal>09 — Témoignages</span>
-      <h2 data-reveal style="margin-top: var(--s-3)">Ce que disent les <em>familles</em> qui vivent dans nos cuisines.</h2>
+      <span class="eyebrow" data-reveal>09 — Contact</span>
+      <h2 data-reveal style="margin-top: var(--s-3)">Parlons de votre <em>projet.</em></h2>
     </div>
     <p class="lede" data-reveal>
-      Note moyenne 4,9/5 sur 142 avis vérifiés Google &amp; Houzz. Chaque chantier livré
-      est suivi pendant 12 mois par notre service après-vente.
+      Remplissez le formulaire ci-dessous et notre équipe vous répondra dans les plus brefs délais.
     </p>
   </div>
 
-  <div class="kudos-grid">
-    <article class="quote" data-reveal>
-      <div class="stars">★★★★★</div>
-      <blockquote>
-        « Précision absolue sur les délais. Le plan 3D correspondait au millimètre à la
-        cuisine livrée. On a touché chaque échantillon avant de signer — pas de mauvaise
-        surprise. »
-      </blockquote>
-      <div class="quote-foot">
-        <div class="avatar">SE</div>
-        <div>
-          <div class="who">Salma El&nbsp;K.</div>
-          <div class="where">Casablanca · Cuisine îlot</div>
-        </div>
+  <form class="contact-form" action="#" method="post" data-reveal>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="prenom">Prénom *</label>
+        <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
       </div>
-    </article>
-
-    <article class="quote" data-reveal>
-      <div class="stars">★★★★★</div>
-      <blockquote>
-        « Six ans après, les façades laquées sont comme neuves. Une charnière est tombée
-        après un déménagement — remplacée gratuitement en 48 h. C'est ça, le SAV à vie. »
-      </blockquote>
-      <div class="quote-foot">
-        <div class="avatar">YM</div>
-        <div>
-          <div class="who">Younes M.</div>
-          <div class="where">Rabat · Dressing</div>
-        </div>
+      <div class="form-group">
+        <label for="nom">Nom *</label>
+        <input type="text" id="nom" name="nom" required placeholder="Votre nom">
       </div>
-    </article>
-
-    <article class="quote" data-reveal>
-      <div class="stars">★★★★★</div>
-      <blockquote>
-        « J'avais un budget serré. L'équipe a redessiné le projet trois fois pour rester
-        dans l'enveloppe — sans rogner sur la qualité du caisson. Honnête et patient. »
-      </blockquote>
-      <div class="quote-foot">
-        <div class="avatar">NB</div>
-        <div>
-          <div class="who">Nadia B.</div>
-          <div class="where">Marrakech · Salle de bain</div>
-        </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse email">
       </div>
-    </article>
-  </div>
+      <div class="form-group">
+        <label for="telephone">Téléphone *</label>
+        <input type="tel" id="telephone" name="telephone" required placeholder="Votre numéro de téléphone">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="sujet">Comment pouvons-nous vous aider ?</label>
+      <select id="sujet" name="sujet">
+        <option value="" disabled selected>Sélectionnez une option</option>
+        <option value="devis">J'ai besoin d'un devis</option>
+        <option value="support">J'ai besoin d'assistance technique ou de support</option>
+        <option value="info">Je souhaite plus d'informations sur vos cuisines</option>
+        <option value="partenariat">Je suis un revendeur intéressé par des opportunités de partenariat</option>
+        <option value="autre">Autre</option>
+      </select>
+    </div>
+    <button type="submit" class="btn form-submit">Soumettre <span class="arrow">→</span></button>
+  </form>
 </section>
 
 <!-- =========== CONTACT =========== -->
