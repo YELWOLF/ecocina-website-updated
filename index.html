@@ -605,12 +605,15 @@ p { margin: 0; }
   position: absolute; inset: 0;
   background-image:
     repeating-linear-gradient(45deg, rgba(0,0,0,0.04) 0 1px, transparent 1px 14px);
+  z-index: 0;
+  pointer-events: none;
 }
 .service-img {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
   display: block;
+  z-index: 1;
 }
 .service-art.k1 .ph { background-color: #2a2a2c; }
 .service-art.k2 .ph { background-color: #b58c5d; }
