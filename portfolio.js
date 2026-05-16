@@ -90,7 +90,7 @@ class PortfolioGallery {
         (project, idx) => `
       <div class="portfolio-item" data-index="${idx}" data-video="kitchen-${idx + 1}">
         <div class="portfolio-item-video-wrapper">
-          <video class="portfolio-item-video" muted playsinline poster="./videos/kitchen-${idx + 1}-poster.jpg">
+          <video class="portfolio-item-video" muted playsinline preload="${idx === 0 ? 'metadata' : 'none'}" poster="./videos/kitchen-${idx + 1}-poster.jpg">
             <source src="./videos/kitchen-${idx + 1}.mp4" type="video/mp4">
           </video>
         </div>

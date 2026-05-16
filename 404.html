@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#f3eee3" />
+<meta name="robots" content="noindex, follow" />
+<title>Page introuvable · Ecocina</title>
+<meta name="description" content="La page demandée est introuvable. Retournez à l'accueil Ecocina pour découvrir nos cuisines, dressings et salles de bain sur mesure." />
+<link rel="canonical" href="https://ecocinacom.com/404.html" />
+<link rel="icon" href="assets/ecocina-logo.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #f5f1e8;
+    --paper: #fbf8f1;
+    --ink: #1a1a1b;
+    --ink-soft: #3d3c38;
+    --ink-mute: #6b665b;
+    --line: #d6cdb6;
+    --accent: #3d5240;
+    --accent-dk: #2a3a2c;
+    --warm: #b87340;
+    --display: 'Cormorant Garamond', 'Times New Roman', serif;
+    --sans: 'Manrope', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    line-height: 1.55;
+  }
+  main {
+    max-width: 640px;
+    text-align: center;
+  }
+  .code {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    color: var(--warm);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: clamp(40px, 6vw + 16px, 88px);
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 20px;
+  }
+  h1 em {
+    color: var(--accent);
+    font-style: italic;
+  }
+  p {
+    color: var(--ink-soft);
+    font-size: 17px;
+    margin-bottom: 32px;
+  }
+  .actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--paper);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    border: 1px solid var(--accent);
+    transition: background .2s ease, transform .2s ease;
+  }
+  .btn:hover { background: var(--accent-dk); transform: translateY(-1px); }
+  .btn.ghost {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--line);
+  }
+  .btn.ghost:hover { background: var(--paper); }
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: var(--line);
+    margin: 32px auto;
+  }
+  .quick-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  .quick-links a {
+    color: var(--ink-mute);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .quick-links a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div class="code">404 · Page introuvable</div>
+    <h1>Cette pièce <em>n'existe pas</em> encore.</h1>
+    <p>
+      La page que vous cherchez a peut-être été déplacée, ou n'a jamais existé.
+      Mais votre projet de cuisine, lui, on peut le dessiner.
+    </p>
+    <div class="actions">
+      <a class="btn" href="/">Retour à l'accueil</a>
+      <a class="btn ghost" href="/#contact">Nous contacter</a>
+    </div>
+    <div class="divider"></div>
+    <nav class="quick-links" aria-label="Liens rapides">
+      <a href="/#services">Nos services</a>
+      <a href="/#portfolio">Réalisations</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/mentions-legales.html">Mentions légales</a>
+    </nav>
+  </main>
+</body>
+</html>

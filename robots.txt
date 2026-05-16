@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /uploads/*.pdf$
+Disallow: /uploads/*.md$
+
+Sitemap: https://ecocinacom.com/sitemap.xml
