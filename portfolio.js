@@ -96,7 +96,6 @@ class PortfolioGallery {
         </div>
         <div class="portfolio-item-overlay">
           <div class="portfolio-item-content">
-            <div class="portfolio-item-location">${project.location}</div>
             <h3 class="portfolio-item-title">${project.title}</h3>
             <div class="portfolio-item-divider"></div>
             <div class="portfolio-item-details">
