@@ -15,6 +15,47 @@
 <meta name="theme-color" content="#f3eee3" />
 <title>Ecocina — Cuisines, dressings & salles de bain sur mesure · Maroc</title>
 <meta name="description" content="Ecocina conçoit, fabrique et pose des cuisines, dressings et salles de bain sur mesure. Caissons hydrofuges, façades premium, plans en quartz et céramique. Devis gratuit en 48 h." />
+<meta property="og:title" content="Ecocina — Cuisines, dressings & salles de bain sur mesure · Maroc" />
+<meta property="og:description" content="Ecocina conçoit, fabrique et pose des cuisines, dressings et salles de bain sur mesure. Caissons hydrofuges, façades premium, plans en quartz et céramique. Devis gratuit en 48 h." />
+<meta property="og:image" content="https://ecocinacom.com/assets/hero.jpg" />
+<meta property="og:url" content="https://ecocinacom.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ecocina — Cuisines, dressings & salles de bain sur mesure" />
+<meta name="twitter:description" content="Cuisines, dressings et salles de bain sur mesure au Maroc. Caissons hydrofuges, façades premium, devis gratuit en 48 h." />
+<meta name="twitter:image" content="https://ecocinacom.com/assets/hero.jpg" />
+<link rel="canonical" href="https://ecocinacom.com/" />
+<link rel="icon" href="assets/ecocina-logo.png" type="image/png" />
+<link rel="preload" as="image" href="assets/hero.jpg" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Ecocina",
+  "description": "Cuisines, dressings et salles de bain sur mesure au Maroc",
+  "url": "https://ecocinacom.com/",
+  "telephone": "+212645633243",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Route d'El Jadida",
+    "addressLocality": "Casablanca",
+    "addressCountry": "MA"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  "priceRange": "À partir de 25 000 DH",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Service",
+    "telephone": "+212645633243"
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -1904,13 +1945,13 @@ footer {
       <div class="brand-mark" aria-hidden="true"></div>
       <span class="brand-name">Ecocina</span>
     </a>
-    <div class="nav-links" role="menubar">
-      <a href="#services">Cuisines</a>
-      <a href="#services">Dressings</a>
-      <a href="#services">Salles de bain</a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#cuisines">Cuisines</a>
+      <a href="#dressings">Dressings</a>
+      <a href="#salles-de-bain">Salles de bain</a>
       <a href="#portfolio">Réalisations</a>
       <a href="#process">Notre démarche</a>
-    </div>
+    </nav>
     <div class="nav-cta">
       <a class="btn ghost" href="tel:+212645633243" aria-label="Appeler Ecocina">06 45 63 32 43</a>
       <a class="btn" href="#contact">Prendre rendez-vous <span class="arrow">→</span></a>
@@ -2141,10 +2182,13 @@ footer {
       Nous traitons chaque pièce comme un meuble sur mesure&nbsp;: relevé millimétré,
       plan 3D, matériaux choisis avec vous, pose par notre atelier. Aucun sous-traitant.
     </p>
+    <p class="eyebrow" data-reveal style="margin-top: var(--s-4); color: var(--ink-mute);">
+      À partir de 25 000 DH — Devis et plan 3D gratuits, sans engagement.
+    </p>
   </div>
 
   <div class="services-grid">
-    <article class="service" data-reveal>
+    <article class="service" id="cuisines" data-reveal>
       <div class="service-art k1">
         <img src="uploads/cuisines.jpeg" alt="Cuisines sur mesure - Ecocina" class="service-img">
         <div class="ph"></div>
@@ -2157,7 +2201,7 @@ footer {
       </div>
     </article>
 
-    <article class="service" data-reveal>
+    <article class="service" id="dressings" data-reveal>
       <div class="service-art k2">
         <img src="uploads/dressings.jpeg" alt="Dressings sur mesure - Ecocina" class="service-img">
         <div class="ph"></div>
@@ -2170,7 +2214,7 @@ footer {
       </div>
     </article>
 
-    <article class="service" data-reveal>
+    <article class="service" id="salles-de-bain" data-reveal>
       <div class="service-art k3">
         <img src="uploads/salles de bain.jpeg" alt="Salles de bain sur mesure - Ecocina" class="service-img">
         <div class="ph"></div>
@@ -2577,6 +2621,49 @@ footer {
   </button>
 </section>
 
+<!-- =========== FAQ =========== -->
+<section class="faq wrap" id="faq" data-screen-label="08 FAQ">
+  <div class="shead">
+    <div>
+      <span class="eyebrow" data-reveal>08 — Questions fréquentes</span>
+      <h2 data-reveal style="margin-top: var(--s-3)">Vos questions, <em>nos réponses.</em></h2>
+    </div>
+  </div>
+
+  <div class="faq-list">
+    <details class="q" data-reveal>
+      <summary>Quelle garantie offrez-vous sur vos produits ?</summary>
+      <p>
+        Tous nos produits bénéficient d'une <strong>garantie de 10 ans</strong> sur les structures (caissons) et les quincailleries BLUM (tiroirs, charnières). Nos façades sont garanties <strong>5 ans</strong> contre les défauts de fabrication. Cette garantie couvre les vices cachés et les problèmes de fonctionnement. En cas de problème, notre équipe intervient directement — pas de frais supplémentaires si le défaut relève de notre responsabilité.
+      </p>
+    </details>
+
+    <details class="q" data-reveal>
+      <summary>Combien de temps dure l'installation ?</summary>
+      <p>
+        Une cuisine complète (de 3 à 6 mètres linéaires) est posée en <strong>3 à 5 jours</strong> selon la superficie, la complexité de l'installation, et les aménagements existants. Nos équipes travaillent du lundi au samedi. Après la pose, nous effectuons un test complet (tiroirs, portes, plan de travail) — vous ne partez pas sans avoir validé le résultat. Nous vous communiquons un planning précis lors de la visite technique gratuite initiale.
+      </p>
+    </details>
+
+    <details class="q" data-reveal>
+      <summary>Comment obtenir un devis ? Combien ça coûte ?</summary>
+      <p>
+        Le devis est <strong>100% gratuit et sans engagement</strong>. Voici le process&nbsp;:
+      </p>
+      <ol style="margin-top: var(--s-2);">
+        <li>Contactez-nous via le formulaire ou WhatsApp</li>
+        <li>Nous fixons une visite technique (gratuite, 1h environ)</li>
+        <li>Nous relevons vos dimensions, analysons votre espace, discutons de vos besoins</li>
+        <li>Vous recevez un devis chiffré + un plan 3D</li>
+        <li>À partir de ce moment, vous décidez — sans pression</li>
+      </ol>
+      <p style="margin-top: var(--s-2);">
+        Nos réalisations débutent <strong>à partir de 25 000 DH</strong> selon le type de cuisine, les matériaux choisis et la superficie. Une petite cuisine épurée peut coûter 25–35 k MAD. Une cuisine avec îlot et finitions premium peut atteindre 60–80 k MAD ou plus. Le devis est ajusté à votre budget et vos besoins réels.
+      </p>
+    </details>
+  </div>
+</section>
+
 <!-- =========== CONTACT FORM =========== -->
 <section class="contact-form-section wrap" data-screen-label="09 contact-form">
   <div class="shead">
@@ -2602,8 +2689,8 @@ footer {
     </div>
     <div class="form-row">
       <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Votre adresse email">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="Votre adresse email">
       </div>
       <div class="form-group">
         <label for="telephone">Téléphone *</label>
@@ -2621,6 +2708,11 @@ footer {
         <option value="autre">Autre</option>
       </select>
     </div>
+    <div class="form-group">
+      <label for="message">Décrivez votre projet</label>
+      <textarea id="message" name="message" placeholder="Parlez-nous de vos besoins, dimensions, style..." rows="5"></textarea>
+    </div>
+    <div id="form-message" style="display: none; padding: var(--s-3); border-radius: var(--radius); margin-top: var(--s-3); font-size: 14px;"></div>
     <button type="submit" class="btn form-submit">Soumettre <span class="arrow">→</span></button>
   </form>
 </section>
@@ -2653,7 +2745,7 @@ footer {
       <p>Cuisines, dressings et salles de bain sur mesure. Depuis 2022.</p>
     </div>
     <div class="foot-col">
-      <h5>Nos métiers</h5>
+      <h3>Nos métiers</h3>
       <a href="#services">Cuisines</a>
       <a href="#services">Dressings</a>
       <a href="#services">Salles de bain</a>
@@ -2662,14 +2754,15 @@ footer {
       <a href="#couleurs">Couleurs</a>
     </div>
     <div class="foot-col">
-      <h5>Maison</h5>
+      <h3>Maison</h3>
       <a href="#process">Notre démarche</a>
       <a href="#portfolio">Réalisations</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
       <span>Showroom Casablanca</span>
     </div>
     <div class="foot-col">
-      <h5>Joindre l'équipe</h5>
+      <h3>Joindre l'équipe</h3>
       <a href="tel:+212645633243">+212 6 45 63 32 43</a>
       <a href="https://wa.me/212600076274">WhatsApp · 06 00 07 62 74</a>
       <a href="mailto:contact@ecocinacom.com">contact@ecocinacom.com</a>
@@ -2680,12 +2773,12 @@ footer {
   </div>
   <div class="foot-bottom">
     <span>© 2026 Ecocina · Tous droits réservés</span>
-    <span>Mentions légales · Confidentialité</span>
+    <a href="mentions-legales.html">Mentions légales</a> · <a href="mentions-legales.html#confidentialite">Confidentialité</a>
   </div>
 </footer>
 
 <!-- =========== MOBILE CALL BAR =========== -->
-<div class="callbar" aria-hidden="true">
+<div class="callbar">
   <a class="btn wa" href="https://wa.me/212600076274">WhatsApp</a>
   <a class="btn" href="#contact">Devis gratuit</a>
 </div>
@@ -2736,7 +2829,62 @@ footer {
 </script>
 
 <script>
-class PortfolioGallery{constructor(){this.projects=[{id:'kitchen-1',title:'Élégance Anthracite',materials:'Façade gris anthracite mat Woodimp 22 mm, caisson hydrofuge gris',philosophy:'Plan de travail en céramique Calacatta Grey avec accessoires d\'angles intégrés.',optimization:'Finitions soignées et matériaux haut de gamme pour un rendu épuré et durable.',details:'Façade gris anthracite mat Woodimp 22 mm d\'épaisseur et caisson hydrofuge gris avec plan de travail en céramique Calacatta Grey avec accessoires d\'angles.'},{id:'kitchen-2',title:'Noyer & Noir',materials:'Noyer American Egger, noir mat Egger 18 mm, verre sécurit fumé',philosophy:'Mélange raffiné entre chaleur du bois et profondeur du noir pour un espace unique.',optimization:'Plan de travail en Dekton Orinika pour une résistance et une esthétique sans compromis.',details:'Mélange de noyer American Egger avec le noir mat Egger de 18 mm, portes en verre sécurit fumé avec plan de travail en Dekton Orinika.'},{id:'kitchen-3',title:'Clarté Brillante',materials:'Façade gris clair high-glossy Woodipro, caisson en latte',philosophy:'La brillance du gris clair apporte lumière et modernité à chaque espace de cuisine.',optimization:'Plan de travail en Coverlam pour un rendu minimaliste et facile d\'entretien.',details:'Façade gris clair high-glossy Woodipro, caisson en latte et plan de travail en Coverlam.'},{id:'kitchen-4',title:'Ice & Boisé',materials:'Façade Ice gris mat Woodimp 22 mm, boisé Richmond 22 mm',philosophy:'Alliance subtile entre le froid du gris glacé et la chaleur du boisé Richmond.',optimization:'Plan de travail en quartz Compac Luna pour un résultat élégant et pérenne.',details:'Mélange entre façade Ice gris mat Woodimp 22 mm et boisé Richmond 22 mm avec plan de travail en quartz Compac Luna.'},{id:'kitchen-5',title:'Chêne & Laqué',materials:'Façade Egger poignée intégrée chêne, laqué blanc brillant 5 couches',philosophy:'Contraste réussi entre la noblesse du chêne naturel et la pureté du blanc brillant.',optimization:'Plan de travail en quartz Estatuario pour une touche de luxe intemporelle.',details:'Façade Egger poignée intégrée chêne et façade laqué blanc brillant 5 couches avec plan de travail en quartz Estatuario.'},{id:'kitchen-6',title:'Luna & Walnut',materials:'Façade gris Luna, boisé walnut',philosophy:'Harmonie entre le gris doux du Luna et la richesse du boisé walnut.',optimization:'Plan de travail en quartz Ice Grey Compac pour une finition contemporaine et élégante.',details:'Façade gris Luna avec une touche de boisé walnut et plan de travail en quartz Ice Grey Compac.'}];this.currentIndex=0;this.init()}init(){this.cacheElements();this.createProjectHTML();this.setupScrollListener();this.setupProgressDots();this.setupVideoPlayback();this.setupCloserBtn()}cacheElements(){this.gallery=document.querySelector('.portfolio-gallery');this.progressContainer=document.querySelector('.progress-dots');this.items=[]}createProjectHTML(){const html=this.projects.map((project,idx)=>`<div class="portfolio-item" data-index="${idx}"><div class="portfolio-item-video-wrapper"><video class="portfolio-item-video" muted playsinline><source src="./videos/kitchen-${idx+1}.mp4" type="video/mp4"></video></div><div class="portfolio-item-overlay"><div class="portfolio-item-content"><h3 class="portfolio-item-title">${project.title}</h3><div class="portfolio-item-divider"></div><div class="portfolio-item-details"><div class="detail-item"><div class="detail-label">Matériaux</div><div class="detail-value">${project.materials}</div></div><div class="detail-item"><div class="detail-label">Philosophie</div><div class="detail-value">${project.philosophy}</div></div><div class="detail-item"><div class="detail-label">Optimisation de l'espace</div><div class="detail-value">${project.optimization}</div></div><div class="detail-item"><div class="detail-label">Détails</div><div class="detail-value">${project.details}</div></div></div><button class="portfolio-cta" onclick="portfolioGallery.scrollToCloser()">Découvrir Mon Processus<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M1 8h12m-3-3l3 3-3 3"/></svg></button></div></div></div>`).join('');this.gallery.innerHTML=html;this.items=Array.from(this.gallery.querySelectorAll('.portfolio-item'))}setupScrollListener(){let lastScrollY=0;window.addEventListener('scroll',()=>{const scrollY=window.scrollY;lastScrollY=scrollY;this.items.forEach((item,idx)=>{const rect=item.getBoundingClientRect();const distance=Math.abs(rect.top+rect.height/2-window.innerHeight/2);const threshold=window.innerHeight*0.35;distance<threshold?item.classList.add('in-view'):item.classList.remove('in-view')});setTimeout(()=>this.playVisibleVideo(),100)})}setupProgressDots(){const dots=this.projects.map((_,idx)=>`<div class="progress-dot" data-index="${idx}" onclick="portfolioGallery.scrollToProject(${idx})"></div>`).join('');if(this.progressContainer)this.progressContainer.innerHTML=dots}updateProgressDot(index){document.querySelectorAll('.progress-dot').forEach((dot,idx)=>{dot.classList.toggle('active',idx===index)});this.currentIndex=index}setupVideoPlayback(){window.addEventListener('scroll',()=>this.playVisibleVideo());this.playVisibleVideo()}playVisibleVideo(){this.items.forEach(item=>{const video=item.querySelector('.portfolio-item-video');if(!video)return;const rect=item.getBoundingClientRect();const isVisible=rect.top<window.innerHeight&&rect.bottom>0;isVisible?video.play().catch(()=>{}):video.pause()})}scrollToProject(index){if(index>=0&&index<this.items.length)this.items[index].scrollIntoView({behavior:'smooth',block:'center'})}scrollToCloser(){const closer=document.querySelector('.portfolio-closer');if(closer)closer.scrollIntoView({behavior:'smooth',block:'start'})}setupCloserBtn(){const btn=document.querySelector('.portfolio-closer-btn');if(btn)btn.addEventListener('click',()=>{const contact=document.querySelector('#contact');if(contact)contact.scrollIntoView({behavior:'smooth',block:'start'});else document.querySelector('.btn.wa')?.click()})}}document.addEventListener('DOMContentLoaded',()=>{window.portfolioGallery=new PortfolioGallery()});
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.querySelector('.contact-form');
+  const formMessage = document.querySelector('#form-message');
+  if (!contactForm) return;
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const data = {
+      prenom: formData.get('prenom'),
+      nom: formData.get('nom'),
+      email: formData.get('email'),
+      telephone: formData.get('telephone'),
+      sujet: formData.get('sujet'),
+      message: formData.get('message')
+    };
+
+    const button = contactForm.querySelector('[type="submit"]');
+    const originalText = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Envoi...';
+
+    fetch('https://formspree.io/f/xrejnajk', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(res => {
+      if (res.ok) {
+        formMessage.style.display = 'block';
+        formMessage.style.background = 'rgba(61, 82, 64, 0.1)';
+        formMessage.style.color = 'var(--accent)';
+        formMessage.textContent = '✓ Merci ! Nous vous répondons sous 48h.';
+        contactForm.reset();
+        button.textContent = originalText;
+        button.disabled = false;
+        setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
+      } else {
+        throw new Error('Submission failed');
+      }
+    })
+    .catch(err => {
+      formMessage.style.display = 'block';
+      formMessage.style.background = 'rgba(184, 115, 64, 0.1)';
+      formMessage.style.color = 'var(--warm)';
+      formMessage.textContent = '✗ Une erreur est survenue. Appelez-nous directement.';
+      button.textContent = originalText;
+      button.disabled = false;
+    });
+  });
+});
+</script>
+
+<script>
+class PortfolioGallery{constructor(){this.projects=[{id:'kitchen-1',title:'Élégance Anthracite',materials:'Façade gris anthracite mat Woodimp 22 mm, caisson hydrofuge gris',philosophy:'Plan de travail en céramique Calacatta Grey avec accessoires d\'angles intégrés.',optimization:'Finitions soignées et matériaux haut de gamme pour un rendu épuré et durable.',details:'Façade gris anthracite mat Woodimp 22 mm d\'épaisseur et caisson hydrofuge gris avec plan de travail en céramique Calacatta Grey avec accessoires d\'angles.'},{id:'kitchen-2',title:'Noyer & Noir',materials:'Noyer American Egger, noir mat Egger 18 mm, verre sécurit fumé',philosophy:'Mélange raffiné entre chaleur du bois et profondeur du noir pour un espace unique.',optimization:'Plan de travail en Dekton Orinika pour une résistance et une esthétique sans compromis.',details:'Mélange de noyer American Egger avec le noir mat Egger de 18 mm, portes en verre sécurit fumé avec plan de travail en Dekton Orinika.'},{id:'kitchen-3',title:'Clarté Brillante',materials:'Façade gris clair high-glossy Woodipro, caisson en latte',philosophy:'La brillance du gris clair apporte lumière et modernité à chaque espace de cuisine.',optimization:'Plan de travail en Coverlam pour un rendu minimaliste et facile d\'entretien.',details:'Façade gris clair high-glossy Woodipro, caisson en latte et plan de travail en Coverlam.'},{id:'kitchen-4',title:'Ice & Boisé',materials:'Façade Ice gris mat Woodimp 22 mm, boisé Richmond 22 mm',philosophy:'Alliance subtile entre le froid du gris glacé et la chaleur du boisé Richmond.',optimization:'Plan de travail en quartz Compac Luna pour un résultat élégant et pérenne.',details:'Mélange entre façade Ice gris mat Woodimp 22 mm et boisé Richmond 22 mm avec plan de travail en quartz Compac Luna.'},{id:'kitchen-5',title:'Chêne & Laqué',materials:'Façade Egger poignée intégrée chêne, laqué blanc brillant 5 couches',philosophy:'Contraste réussi entre la noblesse du chêne naturel et la pureté du blanc brillant.',optimization:'Plan de travail en quartz Estatuario pour une touche de luxe intemporelle.',details:'Façade Egger poignée intégrée chêne et façade laqué blanc brillant 5 couches avec plan de travail en quartz Estatuario.'},{id:'kitchen-6',title:'Luna & Walnut',materials:'Façade gris Luna, boisé walnut',philosophy:'Harmonie entre le gris doux du Luna et la richesse du boisé walnut.',optimization:'Plan de travail en quartz Ice Grey Compac pour une finition contemporaine et élégante.',details:'Façade gris Luna avec une touche de boisé walnut et plan de travail en quartz Ice Grey Compac.'}];this.currentIndex=0;this.init()}init(){this.cacheElements();this.createProjectHTML();this.setupScrollListener();this.setupProgressDots();this.setupVideoPlayback();this.setupCloserBtn()}cacheElements(){this.gallery=document.querySelector('.portfolio-gallery');this.progressContainer=document.querySelector('.progress-dots');this.items=[]}createProjectHTML(){const html=this.projects.map((project,idx)=>`<div class="portfolio-item" data-index="${idx}"><div class="portfolio-item-video-wrapper"><video class="portfolio-item-video" muted playsinline poster="./videos/kitchen-${idx+1}-poster.jpg"><source src="./videos/kitchen-${idx+1}.mp4" type="video/mp4"></video></div><div class="portfolio-item-overlay"><div class="portfolio-item-content"><h3 class="portfolio-item-title">${project.title}</h3><div class="portfolio-item-divider"></div><div class="portfolio-item-details"><div class="detail-item"><div class="detail-label">Matériaux</div><div class="detail-value">${project.materials}</div></div><div class="detail-item"><div class="detail-label">Philosophie</div><div class="detail-value">${project.philosophy}</div></div><div class="detail-item"><div class="detail-label">Optimisation de l'espace</div><div class="detail-value">${project.optimization}</div></div><div class="detail-item"><div class="detail-label">Détails</div><div class="detail-value">${project.details}</div></div></div><button class="portfolio-cta" onclick="portfolioGallery.scrollToCloser()">Découvrir Mon Processus<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M1 8h12m-3-3l3 3-3 3"/></svg></button></div></div></div>`).join('');this.gallery.innerHTML=html;this.items=Array.from(this.gallery.querySelectorAll('.portfolio-item'))}setupScrollListener(){let lastScrollY=0;window.addEventListener('scroll',()=>{const scrollY=window.scrollY;lastScrollY=scrollY;this.items.forEach((item,idx)=>{const rect=item.getBoundingClientRect();const distance=Math.abs(rect.top+rect.height/2-window.innerHeight/2);const threshold=window.innerHeight*0.35;distance<threshold?item.classList.add('in-view'):item.classList.remove('in-view')});setTimeout(()=>this.playVisibleVideo(),100)})}setupProgressDots(){const dots=this.projects.map((_,idx)=>`<div class="progress-dot" data-index="${idx}" onclick="portfolioGallery.scrollToProject(${idx})"></div>`).join('');if(this.progressContainer)this.progressContainer.innerHTML=dots}updateProgressDot(index){document.querySelectorAll('.progress-dot').forEach((dot,idx)=>{dot.classList.toggle('active',idx===index)});this.currentIndex=index}setupVideoPlayback(){window.addEventListener('scroll',()=>this.playVisibleVideo());this.playVisibleVideo()}playVisibleVideo(){this.items.forEach(item=>{const video=item.querySelector('.portfolio-item-video');if(!video)return;const rect=item.getBoundingClientRect();const isVisible=rect.top<window.innerHeight&&rect.bottom>0;isVisible?video.play().catch(()=>{}):video.pause()})}scrollToProject(index){if(index>=0&&index<this.items.length)this.items[index].scrollIntoView({behavior:'smooth',block:'center'})}scrollToCloser(){const closer=document.querySelector('.portfolio-closer');if(closer)closer.scrollIntoView({behavior:'smooth',block:'start'})}setupCloserBtn(){const btn=document.querySelector('.portfolio-closer-btn');if(btn)btn.addEventListener('click',()=>{const contact=document.querySelector('#contact');if(contact)contact.scrollIntoView({behavior:'smooth',block:'start'});else document.querySelector('.btn.wa')?.click()})}}document.addEventListener('DOMContentLoaded',()=>{window.portfolioGallery=new PortfolioGallery()});
 </script>
 
 </body>
