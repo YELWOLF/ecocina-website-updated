@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+     <html lang="en">
+     <head>
+     <meta charset="UTF-8">
+     <title>Kitchen Design Quote</title>
+     <style>
+     body {font-family: Arial, sans-serif; margin: 20px;}
+     h1, h2 {color: #2c3e50;}
+     table {width: 100%; border-collapse: collapse; margin-top: 10px;}
+     th, td {border: 1px solid #ddd; padding: 8px; text-align: left;}
+     th {background-color: #f2f2f2;}
+     .total {font-weight: bold; font-size: 1.2em;}
+     .signature {margin-top: 30px;}
+     </style>
+     </head>
+     <body>
+     <h1>Kitchen Design Quote</h1>
+
+     <h2>Client Information</h2>
+     <p><strong>Name:</strong> {{ClientName}}<br>
+     <strong>Address:</strong> {{ClientAddress}}<br>
+     <strong>Phone:</strong> {{ClientPhone}}<br>
+     <strong>Email:</strong> {{ClientEmail}}</p>
+
+     <h2>Project Scope</h2>
+     <p><strong>Room Size:</strong> {{RoomSize}} sq ft ({{Length}} x {{Width}})<br>
+     <strong>Cabinet Style:</strong> {{CabinetStyle}}<br>
+     <strong>Appliances:</strong> {{Appliances}}</p>
+
+     <h2>Cost Breakdown</h2>
+     <table>
+     <thead>
+     <tr><th>Item</th><th>Quantity</th><th>Unit Price</th><th>Total</th></tr>
+     </thead>
+     <tbody>
+     <tr><td>Cabinetry</td><td>{{CabQty}}</td><td>{{CabUnitPrice}}</td><td>{{CabTotal}}</td></tr>
+     <tr><td>Countertops</td><td>{{CounterQty}}</td><td>{{CounterUnitPrice}}</td><td>{{CounterTotal}}</td><
+     /tr>
+     <tr><td>Flooring</td><td>{{FloorQty}}</td><td>{{FloorUnitPrice}}</td><td>{{FloorTotal}}</td></tr>
+     <tr><td>Appliances</td><td>{{ApplianceQty}}</td><td>{{ApplianceUnitPrice}}</td><td>{{ApplianceTotal}}<
+     /td></tr>
+     <tr><td>Labor
+     (Installation)</td><td>{{LaborHours}}</td><td>{{LaborRate}}</td><td>{{LaborTotal}}</td></tr>
+     <tr><td>Other
+     Materials</td><td>{{OtherQty}}</td><td>{{OtherUnitPrice}}</td><td>{{OtherTotal}}</td></tr>
+     </tbody>
+     <tfoot>
+     <tr class="total"><td colspan="3"
+     style="text-align:right;"><strong>Subtotal:</strong></td><td>{{Subtotal}}</td></tr>
+     <tr><td colspan="3" style="text-align:right;"><strong>Tax
+     ({{TaxRate}}%):</strong></td><td>{{TaxAmount}}</td></tr>
+     <tr class="total"><td colspan="3" style="text-align:right;"><strong>Total
+     Price:</strong></td><td>{{TotalPrice}}</td></tr>
+     </footer>
+     </table>
+
+     <h2>Timeline</h2>
+     <p><strong>Start Date:</strong> {{StartDate}}<br>
+     <strong>Estimated Completion:</strong> {{CompletionDate}}<br>
+     <strong>Duration:</strong> {{Duration}} days</p>
+
+     <h2>Payment Terms</h2>
+     <p>Deposit: {{DepositPercentage}}% due upon approval.<br>
+     Balance due upon completion, within {{PaymentTerms}} days.</p>
+
+     <p class="signature"><strong>Designer Signature:</strong><br>
+     _____________________________<br>
+     {{DesignerName}}<br>
+     {{DesignerContact}}</p>
+
+     </body>
+     </html>
