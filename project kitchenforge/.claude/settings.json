@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Recurse -Directory)",
+      "Bash(Select-Object FullName)",
+      "Read(//c/Users/yoyo-/OneDWindow/Bureau/**)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\yoyo-\\Downloads\\project kitchenforge\\kitchenforge"
+    ]
+  }
+}

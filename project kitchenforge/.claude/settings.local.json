@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($root = \"C:\\\\Users\\\\yoyo-\\\\Downloads\\\\project kitchenforge\\\\kitchenforge\"; New-Item -ItemType Directory -Force -Path \"$root\\\\backend\",\"$root\\\\frontend\\\\public\",\"$root\\\\frontend\\\\src\\\\components\",\"$root\\\\frontend\\\\src\\\\hooks\",\"$root\\\\frontend\\\\src\\\\utils\",\"$root\\\\frontend\\\\src\\\\styles\" | Select-Object -ExpandProperty FullName)"
+    ]
+  }
+}

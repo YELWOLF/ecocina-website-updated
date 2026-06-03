@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ecocina Visitor Tracker — Install Guide</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #222; }
+    h1 { color: #1a56db; }
+    h2 { margin-top: 32px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    pre { background: #f4f4f4; padding: 16px; border-radius: 6px; overflow-x: auto; font-size: 13px; }
+    .step { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 12px 16px; margin: 12px 0; border-radius: 4px; }
+    .warn { background: #fff7ed; border-left: 4px solid #f59e0b; padding: 12px 16px; margin: 12px 0; border-radius: 4px; }
+    code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; font-size: 13px; }
+  </style>
+</head>
+<body>
+
+<h1>Ecocina Visitor Tracker</h1>
+<p>Identifies the <strong>company</strong> of every visitor on your website using their IP address, then pushes them automatically into your lead pipeline.</p>
+
+<h2>Step 1 — Get a free IPinfo token</h2>
+<div class="step">
+  Go to <a href="https://ipinfo.io/signup" target="_blank">ipinfo.io/signup</a> → create a free account.<br>
+  Copy your <strong>Access Token</strong> (looks like <code>abc123def456</code>).
+</div>
+
+<h2>Step 2 — Update the token in the script</h2>
+<p>Open <code>visitor-tracker.js</code> and replace line 14:</p>
+<pre>var IPINFO_TOKEN = "YOUR_IPINFO_TOKEN";   // ← paste your token here</pre>
+
+<h2>Step 3 — Paste this snippet on your website</h2>
+<p>Add this just before the closing <code>&lt;/body&gt;</code> tag on <strong>every page</strong> of ecocinacom.com:</p>
+
+<pre>&lt;!-- Ecocina Visitor Tracker --&gt;
+&lt;script&gt;
+(function(){var T="YOUR_IPINFO_TOKEN",W="https://spout-hamlet-stapling.ngrok-free.dev/webhook/rb2b-intake",C=7;function k(i){return"ecocina_v_"+i}function s(i){try{var r=localStorage.getItem(k(i));if(!r)return!1;return(Date.now()-parseInt(r,10))&lt;C*864e5}catch(e){return!1}}function m(i){try{localStorage.setItem(k(i),String(Date.now()))}catch(e){}}function p(o){if(!o)return"";return o.replace(/^AS\d+\s+/i,"").trim()}function b(o){var bots=["amazon","google","microsoft","cloudflare","digitalocean","linode","ovh","hetzner","vultr","fastly","akamai"];var l=(o||"").toLowerCase();return bots.some(function(x){return l.indexOf(x)!==-1})}function run(){fetch("https://ipinfo.io/json?token="+T).then(function(r){return r.json()}).then(function(d){var ip=d.ip||"",org=p(d.org),city=d.city||"",country=d.country||"",domain="";if(!ip||b(org)||s(ip))return;if(org)domain=org.toLowerCase().replace(/[^a-z0-9\s]/g,"").trim().split(/\s+/)[0]+".com";fetch(W,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({first_name:"Website",last_name:"Visitor",email:"",company_name:org,company_domain:domain,company_industry:"",title:"",page_url:window.location.href,visitor_ip:ip,visitor_city:city,visitor_country:country,source:"ipinfo-tracker"}),keepalive:true}).catch(function(){});m(ip)}).catch(function(){})}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",run)}else{setTimeout(run,500)}})();
+&lt;/script&gt;</pre>
+
+<div class="warn">
+  <strong>Replace</strong> <code>YOUR_IPINFO_TOKEN</code> in the snippet above with your actual token before pasting.
+</div>
+
+<h2>What happens after install</h2>
+<ol>
+  <li>Visitor lands on your site → script runs silently after page load</li>
+  <li>IPinfo returns their company + city + country from their IP</li>
+  <li>Script pushes to your n8n RB2B webhook</li>
+  <li>n8n normalizes the lead and fires the full 9-agent pipeline</li>
+  <li>If qualified → personalized cold email sent automatically</li>
+</ol>
+
+<h2>Free tier limits</h2>
+<ul>
+  <li><strong>IPinfo</strong>: 50,000 lookups/month (free)</li>
+  <li><strong>Cooldown</strong>: same IP fires only once per 7 days (stored in localStorage)</li>
+  <li><strong>Bot filter</strong>: AWS, Google, Cloudflare etc. are auto-skipped</li>
+</ul>
+
+<h2>Test it</h2>
+<p>Open your browser console on your website and run:</p>
+<pre>// Check if the tracker fired (look for your IP in localStorage)
+Object.keys(localStorage).filter(k => k.startsWith('ecocina_v_'))</pre>
+
+<p>Or send a manual test:</p>
+<pre>curl -X POST https://spout-hamlet-stapling.ngrok-free.dev/webhook/rb2b-intake \
+  -H "Content-Type: application/json" \
+  -d '{"first_name":"Test","last_name":"Company","company_name":"Acme Design Studio","company_domain":"acme.com","page_url":"https://ecocinacom.com/","source":"ipinfo-tracker"}'</pre>
+
+</body>
+</html>
