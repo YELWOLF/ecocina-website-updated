@@ -14,16 +14,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="theme-color" content="#f3eee3" />
 <title>Ecocina — Cuisines, dressings & salles de bain sur mesure · Maroc</title>
-<meta name="description" content="Ecocina conçoit, fabrique et pose des cuisines, dressings et salles de bain sur mesure. Caissons hydrofuges, façades premium, plans en quartz et céramique. Devis gratuit en 48 h." />
+<meta name="description" content="Ecocina conçoit et pilote vos cuisines, dressings et salles de bain sur mesure : sourcing, fabrication et pose coordonnés. Caissons hydrofuges, façades premium, plans en quartz et céramique. Pré-estimation gratuite en 48 h." />
 <meta property="og:title" content="Ecocina — Cuisines, dressings & salles de bain sur mesure · Maroc" />
-<meta property="og:description" content="Ecocina conçoit, fabrique et pose des cuisines, dressings et salles de bain sur mesure. Caissons hydrofuges, façades premium, plans en quartz et céramique. Devis gratuit en 48 h." />
+<meta property="og:description" content="Ecocina conçoit et pilote vos cuisines, dressings et salles de bain sur mesure : sourcing, fabrication et pose coordonnés. Caissons hydrofuges, façades premium, plans en quartz et céramique. Pré-estimation gratuite en 48 h." />
 <meta property="og:image" content="https://ecocinacom.com/assets/hero.jpg" />
 <meta property="og:url" content="https://ecocinacom.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="fr_FR" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Ecocina — Cuisines, dressings & salles de bain sur mesure" />
-<meta name="twitter:description" content="Cuisines, dressings et salles de bain sur mesure au Maroc. Caissons hydrofuges, façades premium, devis gratuit en 48 h." />
+<meta name="twitter:description" content="Cuisines, dressings et salles de bain sur mesure au Maroc, conçues et pilotées par un expert. Caissons hydrofuges, façades premium, pré-estimation gratuite en 48 h." />
 <meta name="twitter:image" content="https://ecocinacom.com/assets/hero.jpg" />
 <link rel="canonical" href="https://ecocinacom.com/" />
 <link rel="icon" href="assets/ecocina-logo.png" type="image/png" />
@@ -35,10 +35,13 @@
   "name": "Ecocina",
   "description": "Cuisines, dressings et salles de bain sur mesure au Maroc",
   "url": "https://ecocinacom.com/",
-  "telephone": "+212645633243",
+  "telephone": "+212779826281",
+  "areaServed": {
+    "@type": "City",
+    "name": "Casablanca"
+  },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Route d'El Jadida",
     "addressLocality": "Casablanca",
     "addressCountry": "MA"
   },
@@ -52,7 +55,7 @@
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "Customer Service",
-    "telephone": "+212645633243"
+    "telephone": "+212779826281"
   }
 }
 </script>
@@ -66,7 +69,7 @@
       "name": "Quelle garantie offrez-vous sur vos produits ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tous nos produits bénéficient d'une garantie de 10 ans sur les structures (caissons) et les quincailleries BLUM. Nos façades sont garanties 5 ans contre les défauts de fabrication. En cas de problème, notre équipe intervient directement."
+        "text": "Tous nos produits bénéficient d'une garantie de 10 ans sur les structures (caissons) et les quincailleries BLUM. Nos façades sont garanties 5 ans contre les défauts de fabrication. En cas de problème, nous coordonnons directement l'intervention avec le fournisseur ou le poseur concerné."
       }
     },
     {
@@ -74,7 +77,7 @@
       "name": "Combien de temps dure l'installation ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Une cuisine complète (de 3 à 6 mètres linéaires) est posée en 3 à 5 jours selon la superficie et la complexité de l'installation. Nos équipes travaillent du lundi au samedi et effectuent un test complet avant validation."
+        "text": "Une cuisine complète (de 3 à 6 mètres linéaires) est posée en 3 à 5 jours selon la superficie et la complexité de l'installation. Nos poseurs partenaires travaillent du lundi au samedi et effectuent un test complet avant validation."
       }
     },
     {
@@ -82,24 +85,10 @@
       "name": "Comment obtenir un devis ? Combien ça coûte ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Le devis est 100% gratuit et sans engagement. Nos réalisations débutent à partir de 25 000 DH. Contactez-nous via le formulaire ou WhatsApp pour planifier une visite technique gratuite avec relevé de dimensions et plan 3D."
+        "text": "Le premier contact, l'appel découverte et la pré-estimation sont 100% gratuits et sans engagement. L'étude complète (plan 3D détaillé + devis chiffré) est proposée pour un forfait de 300 à 600 DH, entièrement déduit de votre projet si vous nous confiez la réalisation. Nos réalisations débutent à partir de 25 000 DH. Contactez-nous via le formulaire ou WhatsApp pour planifier une visite technique gratuite avec relevé de dimensions."
       }
     }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Ecocina",
-  "image": "https://ecocinacom.com/assets/hero.jpg",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "47",
-    "bestRating": "5"
-  }
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1311,245 +1300,268 @@ footer {
 @media (max-width: 879px) { .floating-wa { display: none; } }
 
 /* ============================================================
-   RÉALISATIONS — éditorial sticky (portfolio v2)
+   PORTFOLIO — Immersive Scroll Gallery
    ============================================================ */
 
-.portfolio-v2 {
+:root {
+  --port-transition: 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --port-ease: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+#portfolio {
   background: var(--bg);
-  position: relative;
-}
-
-.portfolio-v2-hero {
-  padding: var(--pad-y) var(--pad-x) var(--s-5);
-  max-width: var(--maxw);
-  margin: 0 auto;
-}
-
-.portfolio-v2-hero h2 {
-  font-size: var(--t-h2);
-  text-wrap: balance;
-  max-width: 20ch;
-}
-
-.portfolio-v2-hero h2 em {
-  color: var(--accent);
-}
-
-.portfolio-v2-hero .lede {
-  margin-top: var(--s-3);
-  font-size: var(--t-lead);
-  color: var(--ink-soft);
-  max-width: 54ch;
-  line-height: 1.5;
-}
-
-.portfolio-v2-wrap {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 0 var(--pad-x) var(--pad-y);
-}
-
-.portfolio-v2-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--s-4);
-}
-
-@media (min-width: 980px) {
-  .portfolio-v2-grid {
-    grid-template-columns: 1.1fr 1fr;
-    gap: clamp(48px, 6vw, 96px);
-    align-items: start;
-  }
-}
-
-.portfolio-v2-sticky {
-  position: relative;
-}
-
-@media (min-width: 980px) {
-  .portfolio-v2-sticky {
-    position: sticky;
-    top: 96px;
-    height: calc(100vh - 140px);
-    min-height: 580px;
-  }
-}
-
-.portfolio-v2-frame {
-  position: relative;
-  width: 100%;
-  height: 460px;
-  background: #0a0805;
-  border-radius: 4px;
   overflow: hidden;
+  position: relative;
 }
 
-@media (min-width: 980px) {
-  .portfolio-v2-frame {
-    height: 100%;
-  }
-}
-
-.portfolio-v2-frame .scene {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 900ms var(--ease), transform 4s var(--ease);
-  transform: scale(1.05);
-}
-
-.portfolio-v2-frame .scene video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.portfolio-v2-frame .scene.is-active {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.portfolio-v2-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 25%, transparent 60%, rgba(0, 0, 0, 0.7) 100%);
-  pointer-events: none;
+.portfolio-hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: var(--pad-x);
+  padding-right: var(--pad-x);
+  margin-bottom: var(--pad-y);
+  position: relative;
   z-index: 1;
 }
 
-.portfolio-v2-stamp {
-  position: absolute;
-  left: 24px;
-  right: 24px;
-  bottom: 24px;
+.portfolio-hero h2 {
+  font-size: var(--t-h2);
+  margin-bottom: var(--s-4);
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.portfolio-hero .subtitle {
+  font-size: var(--t-lead);
+  color: var(--ink-soft);
+  max-width: 540px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.portfolio-gallery {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.portfolio-item {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 16px;
-  color: rgba(243, 234, 219, 0.92);
-  z-index: 2;
-  pointer-events: none;
+  flex-direction: row;
+  border-top: 1px solid rgba(26,26,27,0.12);
+  padding: 80px var(--pad-x);
+  background: var(--bg);
+  overflow: visible;
+  opacity: 1;
+  align-items: center;
+  gap: clamp(40px, 6vw, 96px);
 }
 
-.portfolio-v2-stamp .seq {
-  font-family: var(--display);
-  font-size: clamp(56px, 6vw, 88px);
-  line-height: 0.85;
-  letter-spacing: -0.02em;
-  color: #f6ecd9;
+.portfolio-item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-.portfolio-v2-stamp .seq em {
-  color: #e8c890;
-  font-style: italic;
-}
-
-.portfolio-v2-stamp .meta {
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  text-align: right;
-  display: grid;
-  gap: 4px;
-  color: rgba(243, 234, 219, 0.78);
-}
-
-.portfolio-v2-chapters {
-  display: grid;
-  gap: clamp(80px, 14vw, 200px);
-  padding: clamp(40px, 8vw, 120px) 0;
-}
-
-.portfolio-v2-chapter {
-  display: grid;
-  gap: var(--s-3);
-  scroll-margin-top: 120px;
-  opacity: 0.45;
-  transition: opacity 700ms var(--ease);
-}
-
-.portfolio-v2-chapter.is-active {
+.portfolio-item.in-view {
   opacity: 1;
 }
 
-.portfolio-v2-chapter .num {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--accent);
+.portfolio-item-video-wrapper {
+  position: relative;
+  flex: 0 0 clamp(260px, 30vw, 440px);
+  aspect-ratio: 4 / 5;
+  background: #000;
+  overflow: hidden;
+  border-radius: 6px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  box-shadow: 0 16px 40px rgba(20,18,12,0.15), 0 4px 8px rgba(20,18,12,0.08);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
 }
 
-.portfolio-v2-chapter .num::before {
-  content: "";
-  width: 32px;
-  height: 1px;
-  background: var(--accent);
+.portfolio-item:hover .portfolio-item-video-wrapper {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(20,18,12,0.2), 0 6px 12px rgba(20,18,12,0.12);
 }
 
-.portfolio-v2-chapter h3 {
-  font-size: clamp(28px, 2.6vw, 44px);
-  letter-spacing: -0.014em;
-  text-wrap: balance;
+.portfolio-item-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease);
 }
 
-.portfolio-v2-chapter h3 em {
-  color: var(--accent);
+.portfolio-item:hover .portfolio-item-video {
+  transform: scale(1.02);
 }
 
-.portfolio-v2-chapter .loc {
+.portfolio-item-overlay {
+  position: relative;
+  flex: 1;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--bg);
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.portfolio-item.in-view .portfolio-item-overlay {
+  opacity: 1;
+}
+
+.portfolio-item-content {
+  max-width: 800px;
+  color: var(--ink);
+}
+
+.portfolio-item-title {
+  font-family: var(--display);
+  font-size: var(--t-h3);
+  font-weight: 500;
+  margin: 0 0 var(--s-3) 0;
+  letter-spacing: -0.012em;
+  line-height: 1.1;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 600ms var(--port-ease) 100ms;
+}
+
+.portfolio-item.in-view .portfolio-item-title {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.portfolio-item-location {
   font-family: var(--mono);
   font-size: 12px;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--ink-mute);
+  margin-bottom: var(--s-2);
 }
 
-.portfolio-v2-chapter > p {
-  font-size: 17px;
-  line-height: 1.6;
-  color: var(--ink-soft);
-  max-width: 46ch;
+.portfolio-item.in-view .portfolio-item-location {
+  opacity: 1;
 }
 
-.portfolio-v2-chapter .specs {
-  margin-top: var(--s-3);
+.portfolio-item-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--line);
+  margin: var(--s-3) 0;
+}
+
+.portfolio-item-details {
   display: grid;
-  gap: 0;
-  border-top: 1px solid var(--line);
-}
-
-.portfolio-v2-chapter .specs .row {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: var(--s-3);
-  padding: 14px 0;
-  border-bottom: 1px solid var(--line-soft);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--gap-lg);
+  margin-top: var(--s-5);
   font-size: 14px;
-  align-items: baseline;
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 700ms var(--port-ease) 250ms;
 }
 
-.portfolio-v2-chapter .specs .k {
+.portfolio-item.in-view .portfolio-item-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+}
+
+.detail-label {
   font-family: var(--mono);
   font-size: 11px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-mute);
+  font-weight: 500;
 }
 
-.portfolio-v2-chapter .specs .v {
+.detail-value {
+  font-size: 15px;
+  line-height: 1.5;
   color: var(--ink);
-  line-height: 1.45;
+}
+
+.portfolio-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-3) var(--s-4);
+  margin-top: var(--s-5);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  color: var(--paper);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 400ms var(--ease);
+  min-height: 44px;
+}
+
+.portfolio-item.in-view .portfolio-cta {
+  opacity: 1;
+}
+
+.portfolio-cta:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(20,18,12,0.15);
+}
+
+.portfolio-progress {
+  position: fixed;
+  bottom: var(--pad-x);
+  right: var(--pad-x);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: 12px;
+  font-family: var(--mono);
+  color: var(--ink-mute);
+  letter-spacing: 0.1em;
+}
+
+.progress-dots {
+  display: flex;
+  gap: var(--s-2);
+  flex-direction: column;
+}
+
+.progress-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--line);
+  border-radius: 50%;
+  transition: all 400ms var(--ease);
+  cursor: pointer;
+}
+
+.progress-dot.active {
+  background: var(--ink);
+  transform: scale(1.5);
+  width: 8px;
+  height: 8px;
 }
 
 .portfolio-closer {
@@ -1580,267 +1592,176 @@ footer {
 .portfolio-closer-text {
   font-size: 16px;
   color: var(--ink-soft);
+  margin-bottom: var(--s-5);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.6;
-  max-width: 60ch;
-  margin: 0 auto;
 }
 
-/* ============================================================
-   TARIFS — pricing tiers
-   ============================================================ */
-
-.pricing {
-  background: var(--bg);
-}
-
-.pricing-grid {
-  display: grid;
-  gap: var(--s-3);
-  grid-template-columns: 1fr;
-  margin-top: var(--s-5);
-}
-
-@media (min-width: 720px) {
-  .pricing-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.tier {
-  position: relative;
-  background: var(--paper);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--line-soft);
-  padding: clamp(28px, 2.6vw, 40px);
-  gap: var(--s-3);
-  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
-  min-height: 560px;
-}
-
-.tier:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-2);
-  border-color: var(--accent);
-}
-
-.tier.featured {
+.portfolio-closer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
   background: var(--ink);
   color: var(--paper);
-  border-color: var(--ink);
-}
-
-.tier.featured:hover {
-  border-color: var(--ink);
-}
-
-.tier.featured .tier-eyebrow {
-  color: rgba(243, 234, 219, 0.6);
-}
-
-.tier.featured .tier-desc {
-  color: rgba(243, 234, 219, 0.78);
-}
-
-.tier.featured .tier-incl li {
-  color: rgba(243, 234, 219, 0.85);
-}
-
-.tier.featured .tier-incl li::before {
-  background: #e8c890;
-}
-
-.tier.featured .tier-incl li.key {
-  color: #f6ecd9;
-}
-
-.tier-flag {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding: 6px 11px;
-  background: rgba(232, 200, 144, 0.18);
-  color: #e8c890;
+  border: 1px solid var(--ink);
   border-radius: 999px;
-  border: 1px solid rgba(232, 200, 144, 0.45);
-}
-
-.tier-eyebrow {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--ink-mute);
-}
-
-.tier-name {
-  font-family: var(--display);
-  font-size: clamp(28px, 2.4vw, 38px);
+  font-family: var(--sans);
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: -0.012em;
-  line-height: 1.05;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 300ms var(--ease);
 }
 
-.tier-name em {
-  font-style: italic;
-  color: var(--accent);
-}
-
-.tier.featured .tier-name em {
-  color: #e8c890;
-}
-
-.tier-price {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding-bottom: var(--s-3);
-  border-bottom: 1px solid var(--line-soft);
-}
-
-.tier.featured .tier-price {
-  border-bottom-color: rgba(243, 234, 219, 0.18);
-}
-
-.tier-price .from {
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--ink-mute);
-  width: 100%;
-}
-
-.tier.featured .tier-price .from {
-  color: rgba(243, 234, 219, 0.6);
-}
-
-.tier-price .num {
-  font-family: var(--display);
-  font-weight: 400;
-  font-size: clamp(38px, 4vw, 56px);
-  line-height: 1;
-  letter-spacing: -0.018em;
-}
-
-.tier-price .unit {
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-mute);
-}
-
-.tier.featured .tier-price .unit {
-  color: rgba(243, 234, 219, 0.7);
-}
-
-.tier-desc {
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--ink-soft);
-}
-
-.tier-incl {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 10px;
-  flex: 1;
-}
-
-.tier-incl li {
-  font-size: 14px;
-  line-height: 1.45;
-  color: var(--ink-soft);
-  padding-left: 22px;
-  position: relative;
-}
-
-.tier-incl li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 12px;
-  height: 1px;
+.portfolio-closer-btn:hover {
   background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
 }
 
-.tier-incl li.key {
-  color: var(--ink);
-  font-weight: 500;
+.portfolio-closer-btn:active {
+  transform: translateY(0);
 }
 
-.tier .btn {
-  align-self: flex-start;
-  margin-top: var(--s-2);
+.material-tag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: var(--s-2);
+  margin-bottom: var(--s-2);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 500ms var(--port-ease);
 }
 
-.tier.featured .btn {
-  background: #e8c890;
-  color: #1a1408;
-  border-color: #e8c890;
+.portfolio-item.in-view .material-tag {
+  opacity: 1;
+  transform: scale(1);
 }
 
-.tier.featured .btn:hover {
-  background: #f0d6a4;
-  border-color: #f0d6a4;
+.material-tag:nth-child(2) {
+  transition-delay: 100ms;
 }
 
-.pricing-note {
-  margin-top: var(--s-5);
-  padding: var(--s-4);
-  background: var(--bg-2);
-  border-radius: var(--radius-lg);
-  display: grid;
-  gap: var(--s-2);
-  border: 1px solid var(--line-soft);
+.material-tag:nth-child(3) {
+  transition-delay: 200ms;
 }
 
-@media (min-width: 720px) {
-  .pricing-note {
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: var(--s-4);
+.material-tag:nth-child(4) {
+  transition-delay: 300ms;
+}
+
+@media (max-width: 900px) {
+  .portfolio-hero {
+    height: 50vh;
+    margin-bottom: var(--gap-md);
+  }
+
+  .portfolio-item,
+  .portfolio-item:nth-child(even) {
+    flex-direction: column;
+    padding: 60px var(--pad-x);
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .portfolio-item-video-wrapper {
+    flex: none;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 4 / 5;
+    height: auto;
+  }
+
+  .portfolio-item-overlay {
+    padding: 0;
+  }
+
+  .portfolio-item-title {
+    font-size: var(--t-h4);
+  }
+
+  .portfolio-item-details {
+    grid-template-columns: 1fr;
+    gap: var(--gap-md);
+  }
+
+  .progress-dots {
+    flex-direction: row;
+  }
+
+  .portfolio-progress {
+    bottom: var(--gap-md);
+    right: var(--gap-md);
   }
 }
 
-.pricing-note .k {
-  font-family: var(--mono);
-  font-size: 10.5px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 6px;
-}
+@media (max-width: 480px) {
+  .portfolio-hero {
+    height: 40vh;
+  }
 
-.pricing-note p {
-  font-size: 14px;
-  color: var(--ink-soft);
-  line-height: 1.55;
-  max-width: 70ch;
+  .portfolio-hero h2 {
+    font-size: var(--t-h3);
+  }
+
+  .portfolio-item,
+  .portfolio-item:nth-child(even) {
+    padding: 40px var(--pad-x);
+    gap: 24px;
+  }
+
+  .portfolio-item-video-wrapper {
+    max-width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto;
+  }
+
+  .portfolio-item-overlay {
+    padding: 0;
+  }
+
+  .portfolio-item-title {
+    font-size: clamp(24px, 5vw, 32px);
+  }
+
+  .portfolio-item-details {
+    grid-template-columns: 1fr;
+    gap: var(--gap-md);
+    margin-top: var(--s-4);
+  }
+
+  .detail-value {
+    font-size: 14px;
+  }
+
+  .progress-dots {
+    gap: var(--s-1);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .portfolio-v2-frame .scene {
-    transition: opacity 200ms linear;
-    transform: none;
-  }
-  .portfolio-v2-chapter {
+  .portfolio-item-overlay,
+  .portfolio-item-title,
+  .portfolio-item-location,
+  .portfolio-item-divider,
+  .portfolio-item-details,
+  .portfolio-cta,
+  .progress-dot,
+  .material-tag {
     transition: none;
-  }
-  .tier,
-  .tier:hover {
     transform: none;
+    opacity: 1;
+  }
+
+  .portfolio-item.in-view .portfolio-item-overlay {
+    opacity: 1;
   }
 }
 
@@ -2065,11 +1986,11 @@ footer {
       <a href="#dressings">Dressings</a>
       <a href="#salles-de-bain">Salles de bain</a>
       <a href="#portfolio">Réalisations</a>
-      <a href="#pricing">Tarifs</a>
       <a href="#process">Notre démarche</a>
+      <a href="#offers">Nos formules</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn ghost" href="tel:+212645633243" aria-label="Appeler Ecocina">06 45 63 32 43</a>
+      <a class="btn ghost" href="tel:+212779826281" aria-label="Appeler Ecocina">07 79 82 62 81</a>
       <a class="btn" href="#contact">Prendre rendez-vous <span class="arrow">→</span></a>
     </div>
     <button class="menu-btn" id="menuOpen" aria-label="Ouvrir le menu">
@@ -2094,13 +2015,13 @@ footer {
     <a href="#services">Dressings</a>
     <a href="#services">Salles de bain</a>
     <a href="#portfolio">Réalisations</a>
-    <a href="#pricing">Tarifs</a>
     <a href="#process">Notre démarche</a>
+    <a href="#offers">Nos formules</a>
     <a href="#contact">Contact</a>
   </div>
   <div class="drawer-foot">
     <a class="btn" href="#contact">Prendre rendez-vous</a>
-    <a class="btn wa" href="https://wa.me/212600076274">WhatsApp · 06 00 07 62 74</a>
+    <a class="btn wa" href="https://wa.me/212779826281">WhatsApp · 07 79 82 62 81</a>
   </div>
 </div>
 
@@ -2138,10 +2059,10 @@ footer {
     <!-- MID editorial -->
     <div class="hero-mid">
       <span class="hero-chap">01 — Esquisse</span>
-      <h1 class="hero-title">Votre cuisine, conçue <em>pour durer.</em></h1>
+      <h1 class="hero-title">Votre cuisine sur mesure, <em>conçue et pilotée par un expert.</em></h1>
       <p class="hero-sub">
-        Ecocina dessine, fabrique et pose des espaces sur mesure&nbsp;: caissons hydrofuges,
-        façades laquées, plans en quartz et céramique. Un seul interlocuteur, un seul standard&nbsp;: la précision.
+        Conception 3D, sélection des matériaux, sourcing professionnel, coordination fabrication
+        et pose&nbsp;: un seul interlocuteur, du projet à la livraison.
       </p>
       <div class="hero-ctas">
         <a class="btn" href="#contact">Devis gratuit en 48&nbsp;h <span class="arrow">→</span></a>
@@ -2211,7 +2132,7 @@ footer {
         <span class="why-num">01</span>
         <div class="why-icon">🏭</div>
         <div class="why-title">Sourcing Espagne</div>
-        <div class="why-desc">Caissons et portes sélectionnés auprès de fournisseurs espagnols certifiés. Pose et finitions réalisées par nos équipes au Maroc.</div>
+        <div class="why-desc">Caissons et portes sélectionnés auprès de fournisseurs espagnols certifiés. Pose et finitions confiées à des poseurs partenaires sélectionnés au Maroc.</div>
       </div>
       <div class="why-item" data-reveal>
         <span class="why-num">02</span>
@@ -2228,8 +2149,8 @@ footer {
       <div class="why-item" data-reveal>
         <span class="why-num">04</span>
         <div class="why-icon">📐</div>
-        <div class="why-title">Devis 3D Offert</div>
-        <div class="why-desc">Plan 3D photoréaliste et devis chiffré gratuits en 48 h — aucun engagement de votre côté.</div>
+        <div class="why-title">Étude Personnalisée</div>
+        <div class="why-desc">Appel découverte et pré-estimation gratuits sous 48 h. Plan 3D complet et devis chiffré déductibles si vous nous confiez le projet.</div>
       </div>
     </div>
   </div>
@@ -2297,10 +2218,10 @@ footer {
     </div>
     <p class="lede" data-reveal>
       Nous traitons chaque pièce comme un meuble sur mesure&nbsp;: relevé millimétré,
-      plan 3D, matériaux choisis avec vous, pose par notre atelier. Aucun sous-traitant.
+      plan 3D, matériaux choisis avec vous, pose par des poseurs partenaires sélectionnés.
     </p>
     <p class="eyebrow" data-reveal style="margin-top: var(--s-4); color: var(--ink-mute);">
-      À partir de 25 000 DH — Devis et plan 3D gratuits, sans engagement.
+      À partir de 25 000 DH — Estimation après étude de vos dimensions, matériaux et équipements.
     </p>
   </div>
 
@@ -2346,193 +2267,25 @@ footer {
   </div>
 </section>
 
-<!-- =========== 03 RÉALISATIONS — ÉDITORIAL STICKY =========== -->
-<section class="portfolio-v2" id="portfolio" data-screen-label="03 realisations">
-  <div class="portfolio-v2-hero">
-    <span class="eyebrow" data-reveal>03 — Réalisations</span>
-    <h2 data-reveal style="margin-top: var(--s-3)">Quatre ans, soixante-dix <em>cuisines</em> posées au Maroc.</h2>
-    <p class="lede" data-reveal>
-      Chaque projet raconté en détail — site, client, matière, délai, budget. Pas d'images
-      retouchées, juste des intérieurs réels, en lumière naturelle et artificielle.
-    </p>
-  </div>
-
-  <div class="portfolio-v2-wrap">
-    <div class="portfolio-v2-grid">
-      <!-- STICKY SCENE FRAME -->
-      <div class="portfolio-v2-sticky">
-        <div class="portfolio-v2-frame">
-          <div class="scene is-active" style="background-image: linear-gradient(135deg, #efe9dc, #cfc8b8 55%, #9b937f);" data-project="0">
-            <video src="videos/kitchen-1.mp4" muted loop playsinline autoplay preload="metadata" aria-hidden="true" tabindex="-1"></video>
-          </div>
-          <div class="scene" style="background-image: linear-gradient(135deg, #2c4530, #1e2e1f 60%, #16211a);" data-project="1">
-            <video src="videos/kitchen-2.mp4" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
-          </div>
-          <div class="scene" style="background-image: linear-gradient(135deg, #b08254, #845f3a 60%, #4f3a25);" data-project="2">
-            <video src="videos/kitchen-3.mp4" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
-          </div>
-          <div class="scene" style="background-image: linear-gradient(135deg, #3d5240, #2a3a2c 60%, #1f2a20);" data-project="3">
-            <video src="videos/kitchen-4.mp4" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
-          </div>
-          <div class="portfolio-v2-stamp">
-            <div class="seq"><span id="projNum">01</span><em>/70</em></div>
-            <div class="meta">
-              <div id="projYear">2024</div>
-              <div id="projCity">Casablanca</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PROJECTS TEXT -->
-      <div class="portfolio-v2-chapters">
-        <!-- PROJECT 01 -->
-        <article class="portfolio-v2-chapter is-active" data-project="0" data-year="2024" data-city="Casablanca">
-          <div class="num">— Projet 01</div>
-          <h3>Villa Anfa. Cuisine <em>épurée.</em></h3>
-          <div class="loc">Casablanca, Maroc</div>
-          <p>
-            Cuisine linéaire 5 mètres. Façades Woodipro blanc pur, plan quartz clair avec bord biseauté, crédence en mur de brique sablée blanc. Intégration électroménager Siemens encastré. Pose août 2024.
-          </p>
-          <div class="specs">
-            <div class="row">
-              <span class="k">Budget</span>
-              <span class="v">185 000 DH (pose & fourniture)</span>
-            </div>
-            <div class="row">
-              <span class="k">Délai</span>
-              <span class="v">6 semaines atelier + 3 jours pose</span>
-            </div>
-            <div class="row">
-              <span class="k">Matière</span>
-              <span class="v">Woodipro 18 mm · Quartz · Crédence plâtre blanc</span>
-            </div>
-            <div class="row">
-              <span class="k">Particularités</span>
-              <span class="v">Îlot 1,5&nbsp;m · éclairage LED intégré · électroménager caché</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 02 -->
-        <article class="portfolio-v2-chapter" data-project="1" data-year="2024" data-city="Casablanca">
-          <div class="num">— Projet 02</div>
-          <h3>Appartement Racine. Laque <em>Catania</em> intense.</h3>
-          <div class="loc">Casablanca, Maroc</div>
-          <p>
-            Cuisine en L. Façades laquées main Catania (vert profond), plan quartz bord droit, électroménager Bosch encastré. Crédence carrelage noir brillant. Rangement vertical optimisé pour petit espace.
-          </p>
-          <div class="specs">
-            <div class="row">
-              <span class="k">Budget</span>
-              <span class="v">224 000 DH (TTC)</span>
-            </div>
-            <div class="row">
-              <span class="k">Délai</span>
-              <span class="v">8 semaines (laque main + retouches)</span>
-            </div>
-            <div class="row">
-              <span class="k">Matière</span>
-              <span class="v">Laque main 5 couches · Quartz · Crédence carrelage 10×20</span>
-            </div>
-            <div class="row">
-              <span class="k">Particularités</span>
-              <span class="v">Profondeur réduite 55 cm · tour de cuisson caché · ouvertures optimisées</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 03 -->
-        <article class="portfolio-v2-chapter" data-project="2" data-year="2024" data-city="Casablanca">
-          <div class="num">— Projet 03</div>
-          <h3>Villa Ain Diab. Massif <em>chêne clair.</em></h3>
-          <div class="loc">Casablanca, Maroc</div>
-          <p>
-            Cuisine ouverte 7 mètres avec îlot massif 2 mètres. Façades Egger chêne naturel, plan quartz blanc, crédence mur entier en carrelage grand format. Électroménager Smeg intégré, électrification cachée.
-          </p>
-          <div class="specs">
-            <div class="row">
-              <span class="k">Budget</span>
-              <span class="v">312 000 DH (îlot + électroménager haut gamme)</span>
-            </div>
-            <div class="row">
-              <span class="k">Délai</span>
-              <span class="v">10 semaines (menuiserie îlot sur mesure)</span>
-            </div>
-            <div class="row">
-              <span class="k">Matière</span>
-              <span class="v">Egger chêne massif 22&nbsp;mm · Quartz · Crédence carrelage 20×60</span>
-            </div>
-            <div class="row">
-              <span class="k">Particularités</span>
-              <span class="v">Îlot 2×1,2 m avec rangement sous · électroménager Smeg Dolce&amp;Gabbana</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 04 -->
-        <article class="portfolio-v2-chapter" data-project="3" data-year="2024" data-city="Casablanca">
-          <div class="num">— Projet 04</div>
-          <h3>Riad Medina. Laque <em>Minéral</em> verte.</h3>
-          <div class="loc">Casablanca, Maroc</div>
-          <p>
-            Cuisine patio riad. Façades laquées main Minéral (vert gris), plan Dekton grand format bord chanfreiné, crédence zellige tradition. Électroménager caché, intégration invisible. Pose juillet 2024.
-          </p>
-          <div class="specs">
-            <div class="row">
-              <span class="k">Budget</span>
-              <span class="v">286 000 DH</span>
-            </div>
-            <div class="row">
-              <span class="k">Délai</span>
-              <span class="v">9 semaines (laque + ajustement zellige)</span>
-            </div>
-            <div class="row">
-              <span class="k">Matière</span>
-              <span class="v">Laque main Minéral · Dekton · Zellige traditionnel sur-mesure</span>
-            </div>
-            <div class="row">
-              <span class="k">Particularités</span>
-              <span class="v">Hauteur sous-plafond variable · intégration zellige historique · électroménager Liebherr invisible</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-
-  <!-- CLOSER -->
-  <div class="portfolio-closer">
-    <span class="portfolio-closer-eyebrow">Les 66 autres projets</span>
-    <h3>Vous trouverez le vôtre parmi nos 70 cuisines.</h3>
-    <p class="portfolio-closer-text">
-      Petites cuisines pour T2, grandes cuisines ouvertes sur salons, îlots massifs,
-      dressings intégrés, salles de bain sur mesure. Avec budget, délai et matière
-      documentés pour chaque client.
-    </p>
-    <a class="btn" href="#contact" style="margin-top: var(--s-4)">Demander le portfolio complet <span class="arrow">→</span></a>
-  </div>
-</section>
-
 <!-- =========== MANIFESTO =========== -->
-<section class="manifesto wrap" data-screen-label="04 manifeste">
+<section class="manifesto wrap" data-screen-label="03 manifesto">
   <div class="shead">
     <div>
-      <span class="eyebrow" style="color: rgba(251,248,241,0.72)" data-reveal>04 — Manifeste</span>
+      <span class="eyebrow" style="color: rgba(251,248,241,0.72)" data-reveal>03 — Manifeste</span>
       <h2 data-reveal style="margin-top: var(--s-3)">Le meuble doit servir <em>la vie qu'on y mène.</em></h2>
     </div>
     <p class="lede" data-reveal>
       Nous croyons qu'un bon meuble se mesure à dix ans, pas à la livraison. C'est pourquoi
-      nous travaillons en atelier, avec les mêmes équipes, sur des matériaux que nous
-      garantissons — et que nous savons réparer.
+      nous travaillons avec les mêmes fournisseurs et les mêmes poseurs partenaires, sur des
+      matériaux que nous garantissons — et que nous savons faire réparer.
     </p>
   </div>
 
   <div class="manifesto-pillars">
     <div class="pillar" data-reveal>
       <div class="num">— 01</div>
-      <h4>Mesure &amp; plan 3D offert</h4>
-      <p>Un relevé sur site, un plan technique, un visuel 3D photoréaliste — avant tout engagement. Vous voyez le projet exactement comme il sera posé.</p>
+      <h4>Mesure &amp; pré-estimation offertes</h4>
+      <p>Un relevé sur site et une pré-estimation budgétaire, avant tout engagement. Le plan 3D détaillé et le devis chiffré sont réalisés dans le cadre de l'étude Ecocina, déductible de votre projet.</p>
     </div>
     <div class="pillar" data-reveal>
       <div class="num">— 02</div>
@@ -2548,10 +2301,10 @@ footer {
 </section>
 
 <!-- =========== BUILD QUALITY =========== -->
-<section class="build wrap" id="construction" data-screen-label="05 construction">
+<section class="build wrap" id="construction" data-screen-label="04 construction">
   <div class="shead">
     <div>
-      <span class="eyebrow" data-reveal>05 — La structure</span>
+      <span class="eyebrow" data-reveal>04 — La structure</span>
       <h2 data-reveal style="margin-top: var(--s-3)">Trois caissons, <em>un seul standard</em> — l'excellence.</h2>
     </div>
     <p class="lede" data-reveal>
@@ -2632,103 +2385,11 @@ footer {
   </div>
 </section>
 
-<!-- =========== FACADES / FINISHES =========== -->
-<section class="finishes wrap" id="facades" data-screen-label="06 facades">
-  <div class="shead">
-    <div>
-      <span class="eyebrow" data-reveal>06 — Façades</span>
-      <h2 data-reveal style="margin-top: var(--s-3)">Quatorze familles. Combinaisons <em>infinies.</em></h2>
-    </div>
-    <p class="lede" data-reveal>
-      Bois aggloméré, brillant ou mat haute performance, laques cinq couches finition main,
-      panneaux structurés Egger — chaque famille répond à un budget, un usage, une lumière.
-    </p>
-  </div>
-
-  <div class="fam-grid">
-    <article class="family" data-reveal>
-      <div class="family-art">
-        <div style="background:#a17a4a"><span>Horizonte</span></div>
-        <div style="background:#cfa874"><span>San Pietro</span></div>
-        <div style="background:#7a5a36"><span>Malta</span></div>
-        <div class="light" style="background:#e8dec6"><span>Rustic White</span></div>
-      </div>
-      <div class="family-body">
-        <span class="k">Famille 01 — Woodimate</span>
-        <h3>Bois aggloméré, 18 &amp; 22 mm.</h3>
-        <p>Finition bois économique et polyvalente. Le 18&nbsp;mm pour les façades légères, le 22&nbsp;mm pour les structures exigeantes et l'habillage d'îlot.</p>
-        <div class="chips">
-          <span class="chip">Horizonte</span><span class="chip">Rustic Tabac</span>
-          <span class="chip">San Pietro</span><span class="chip">Malta</span>
-          <span class="chip">San Marino</span><span class="chip">Garden Oak</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="family" data-reveal>
-      <div class="family-art">
-        <div style="background:#15161a"><span>Black</span></div>
-        <div style="background:#c9b69a"><span>Latte</span></div>
-        <div class="light" style="background:#bcc1c5"><span>Ice Gris</span></div>
-        <div style="background:#9c673d"><span>Cooper</span></div>
-      </div>
-      <div class="family-body">
-        <span class="k">Famille 02 — Woodipro &amp; Woodimp</span>
-        <h3>Brillant &amp; mat haute performance.</h3>
-        <p>Woodipro 18&nbsp;mm — brillant raffiné qui illumine l'espace. Woodimp 22&nbsp;mm — mat anti-traces, sobre et résistant, idéal sur îlot.</p>
-        <div class="chips">
-          <span class="chip">Antracite</span><span class="chip">Luna</span>
-          <span class="chip">Cashemere</span><span class="chip">Arctic White</span>
-          <span class="chip">Silver Leaf</span><span class="chip">Zirkon</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="family" data-reveal>
-      <div class="family-art">
-        <div style="background:#3d5240"><span>Catania</span></div>
-        <div class="light" style="background:#cfb89a"><span>Florencia</span></div>
-        <div style="background:#7d6450"><span>Brecia</span></div>
-        <div style="background:#1f2a3a"><span>Mesina</span></div>
-      </div>
-      <div class="family-body">
-        <span class="k">Famille 03 — Laque main</span>
-        <h3>Cinq couches, finition manuelle.</h3>
-        <p>Chaque façade laquée bénéficie d'un processus minutieux&nbsp;: cinq couches successives appliquées et poncées à la main pour une finition uniforme et durable.</p>
-        <div class="chips">
-          <span class="chip">Catania</span><span class="chip">Latina</span>
-          <span class="chip">Sicilia</span><span class="chip">Florencia</span>
-          <span class="chip">Foggia</span><span class="chip">Verona</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="family" data-reveal>
-      <div class="family-art">
-        <div style="background:#b58c5d"><span>Chêne naturel</span></div>
-        <div style="background:#6c4828"><span>Chêne tabac</span></div>
-        <div style="background:#3a261a"><span>Noyer Carini</span></div>
-        <div class="light" style="background:#d9c4a4"><span>Chêne blanc</span></div>
-      </div>
-      <div class="family-body">
-        <span class="k">Famille 04 — Egger</span>
-        <h3>L'excellence autrichienne.</h3>
-        <p>Panneaux reconnus pour leur résistance aux rayures, aux impacts et à l'humidité. Textures bois authentiques, surfaces mates anti-traces.</p>
-        <div class="chips">
-          <span class="chip">Chêne Naturel</span><span class="chip">Chêne Tabac</span>
-          <span class="chip">Chêne Sherman</span><span class="chip">Noyer Lincoln</span>
-          <span class="chip">Noyer Bourge</span>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
 <!-- =========== PALETTE =========== -->
-<section class="palette wrap" id="couleurs" data-screen-label="07 couleurs">
+<section class="palette wrap" id="couleurs" data-screen-label="06 couleurs">
   <div class="shead">
     <div>
-      <span class="eyebrow" data-reveal>07 — Palette</span>
+      <span class="eyebrow" data-reveal>05 — Palette</span>
       <h2 data-reveal style="margin-top: var(--s-3)">Plus de soixante <em>teintes,</em> sélectionnées pour vieillir bien.</h2>
     </div>
     <p class="lede" data-reveal>
@@ -2792,102 +2453,16 @@ footer {
   </div>
 </section>
 
-<!-- =========== 08 TARIFS =========== -->
-<section class="pricing wrap" id="pricing" data-screen-label="08 tarifs">
-  <div class="shead">
-    <div>
-      <span class="eyebrow" data-reveal>08 — Tarifs</span>
-      <h2 data-reveal style="margin-top: var(--s-3)">Trois fourchettes. Zéro <em>devis</em> mystère.</h2>
-    </div>
-    <p class="lede" data-reveal>
-      Le prix d'une cuisine dépend de la matière, des ferrures et de la complexité. Voici
-      les fourchettes réelles que nos clients paient — toutes garanties, posées, finies.
-      Le devis détaillé reste gratuit en 48&nbsp;h.
-    </p>
-  </div>
-
-  <div class="pricing-grid">
-    <article class="tier" data-reveal>
-      <span class="tier-eyebrow">— 01 · Essentiel</span>
-      <h3 class="tier-name">Cuisine <em>juste,</em> pas minimale.</h3>
-      <div class="tier-price">
-        <span class="from">À partir de</span>
-        <span class="num">38&nbsp;000</span>
-        <span class="unit">DH · linéaire 3&nbsp;ml</span>
-      </div>
-      <p class="tier-desc">Pour une cuisine bien faite, sans pièges. Caissons hydrofuges, façades Woodimate, plan stratifié Egger, ferrures BLUM standard.</p>
-      <ul class="tier-incl">
-        <li class="key">Caissons hydrofuges 18&nbsp;mm</li>
-        <li>Façades Woodimate (6 décors bois)</li>
-        <li>Plan stratifié Egger postformé</li>
-        <li>Charnières BLUM Clip-top 110°</li>
-        <li>Plan 3D photoréaliste avant signature</li>
-        <li class="key">Garantie 10 ans · pose incluse</li>
-      </ul>
-      <a class="btn ghost" href="#contact">Démarrer ce projet <span class="arrow">→</span></a>
-    </article>
-
-    <article class="tier featured" data-reveal>
-      <span class="tier-flag">Le plus choisi</span>
-      <span class="tier-eyebrow">— 02 · Signature</span>
-      <h3 class="tier-name">L'équilibre <em>matière</em> et budget.</h3>
-      <div class="tier-price">
-        <span class="from">À partir de</span>
-        <span class="num">72&nbsp;000</span>
-        <span class="unit">DH · linéaire 3&nbsp;ml</span>
-      </div>
-      <p class="tier-desc">Notre ligne la plus posée. Façades Woodipro brillant ou Woodimp mat anti-traces, plan quartz, tiroirs Tandembox.</p>
-      <ul class="tier-incl">
-        <li class="key">Caissons hydrofuges 18&nbsp;mm</li>
-        <li>Façades Woodipro / Woodimp · 60+ teintes</li>
-        <li class="key">Plan quartz 20&nbsp;mm — bord droit ou biseauté</li>
-        <li>Tiroirs BLUM Tandembox + fermeture amortie</li>
-        <li>Crédence assortie · éclairage LED</li>
-        <li class="key">Garantie 10 ans · SAV à vie</li>
-      </ul>
-      <a class="btn" href="#contact">Démarrer ce projet <span class="arrow">→</span></a>
-    </article>
-
-    <article class="tier" data-reveal>
-      <span class="tier-eyebrow">— 03 · Prestige</span>
-      <h3 class="tier-name">La plus belle matière, <em>sans limite.</em></h3>
-      <div class="tier-price">
-        <span class="from">À partir de</span>
-        <span class="num">120&nbsp;000</span>
-        <span class="unit">DH · linéaire 3&nbsp;ml</span>
-      </div>
-      <p class="tier-desc">Pour ceux qui veulent tout, bien. Laque main 5 couches, plan Dekton grand format, îlot massif, caissons 22&nbsp;mm, électroménager haut de gamme intégré.</p>
-      <ul class="tier-incl">
-        <li class="key">Caissons hydrofuges 18&nbsp;mm ou massif 22&nbsp;mm</li>
-        <li>Façades laquées main (5 couches) · 60+ teintes</li>
-        <li class="key">Plan Dekton ou quartz grand format · bords chanfreinés</li>
-        <li>Îlot massif, électroménager premium intégré</li>
-        <li>Systèmes internes Tandembox + accessoires spécialisés</li>
-        <li class="key">Garantie 10 ans · SAV prioritaire à vie</li>
-      </ul>
-      <a class="btn ghost" href="#contact">Démarrer ce projet <span class="arrow">→</span></a>
-    </article>
-  </div>
-
-  <div class="pricing-note" data-reveal>
-    <div>
-      <div class="k">CE QUI EST TOUJOURS INCLUS</div>
-      <p>Relevé sur site · Plan 3D photoréaliste · Pose par nos équipes · Carnet de garantie · Assistance après-vente à vie pour les pièces d'usure.</p>
-    </div>
-  </div>
-</section>
-
 <!-- =========== PROCESS =========== -->
-<section class="process wrap" id="process" data-screen-label="09 process">
+<section class="process wrap" id="process" data-screen-label="07 process">
   <div class="shead">
     <div>
-      <span class="eyebrow" data-reveal>09 — Notre démarche</span>
+      <span class="eyebrow" data-reveal>06 — Notre démarche</span>
       <h2 data-reveal style="margin-top: var(--s-3)">Cinq étapes. Un seul <em>interlocuteur.</em></h2>
     </div>
     <p class="lede" data-reveal>
-      De la première visite à la pose finale, vous traitez avec la même personne. Pas de
-      relais, pas de sous-traitant, pas de devis qui dérive. Délais annoncés en jours, pas
-      en « semaines ».
+      De la première visite à la pose finale, vous traitez avec la même personne. Un seul
+      interlocuteur, pas de devis qui dérive. Délais annoncés en jours, pas en « semaines ».
     </p>
   </div>
 
@@ -2901,7 +2476,7 @@ footer {
       </div>
       <span class="num">— Étape 01</span>
       <h4>Visite &amp; relevé</h4>
-      <p>Rendez-vous à votre domicile ou en showroom. Relevé millimétré, prise des contraintes techniques, premier brief design.</p>
+      <p>Rendez-vous à votre domicile. Relevé millimétré, prise des contraintes techniques, premier brief design.</p>
       <span class="dur">≈ 1 h · Gratuit</span>
     </div>
     <div class="step" data-reveal data-n="02">
@@ -2912,9 +2487,9 @@ footer {
         </svg>
       </div>
       <span class="num">— Étape 02</span>
-      <h4>Plan 3D &amp; devis</h4>
-      <p>Plan technique, visuel 3D photoréaliste, devis détaillé poste par poste. Vous voyez le projet exactement comme il sera posé.</p>
-      <span class="dur">≈ 48 h · Sans engagement</span>
+      <h4>Pré-estimation &amp; étude</h4>
+      <p>Pré-estimation budgétaire offerte sous 48&nbsp;h. Le plan 3D détaillé et le devis chiffré poste par poste sont réalisés dans le cadre de l'étude Ecocina, déductible si vous confirmez le projet.</p>
+      <span class="dur">≈ 48 h · Pré-estimation offerte</span>
     </div>
     <div class="step" data-reveal data-n="03">
       <div class="step-icon">
@@ -2932,7 +2507,7 @@ footer {
       </div>
       <span class="num">— Étape 03</span>
       <h4>Choix matières</h4>
-      <p>Au showroom, vous touchez chaque façade, chaque plan, chaque finition. Pas de catalogue papier — seulement des échantillons réels.</p>
+      <p>Lors d'un rendez-vous, vous touchez chaque façade, chaque plan, chaque finition à partir d'échantillons réels — pas de catalogue papier.</p>
       <span class="dur">≈ 1 séance · Inclus</span>
     </div>
     <div class="step" data-reveal data-n="04">
@@ -2944,8 +2519,8 @@ footer {
         </svg>
       </div>
       <span class="num">— Étape 04</span>
-      <h4>Fabrication atelier</h4>
-      <p>Découpe, chants, montage. Vous recevez des photos d'étape chaque semaine. Aucun module ne quitte l'atelier sans contrôle.</p>
+      <h4>Fabrication &amp; suivi</h4>
+      <p>Découpe, chants, montage chez nos fournisseurs partenaires. Vous recevez des photos d'étape chaque semaine. Aucun module n'est livré sans contrôle qualité.</p>
       <span class="dur">3 à 5 semaines</span>
     </div>
     <div class="step" data-reveal data-n="05">
@@ -2957,17 +2532,137 @@ footer {
       </div>
       <span class="num">— Étape 05</span>
       <h4>Pose &amp; réception</h4>
-      <p>Pose par nos équipes en 2 à 4 jours. Réception contradictoire, mise en service, remise du carnet de garantie et des notices.</p>
+      <p>Pose par nos poseurs partenaires en 2 à 4 jours. Réception contradictoire, mise en service, remise du carnet de garantie et des notices.</p>
       <span class="dur">2 à 4 jours · Garantie 10 ans</span>
     </div>
   </div>
 </section>
 
-<!-- =========== FAQ =========== -->
-<section class="faq wrap" id="faq" data-screen-label="10 FAQ">
+<!-- =========== OFFRES / FORMULES =========== -->
+<section class="offers wrap" id="offers" data-screen-label="07b offres">
   <div class="shead">
     <div>
-      <span class="eyebrow" data-reveal>10 — Questions fréquentes</span>
+      <span class="eyebrow" data-reveal>06b — Nos formules</span>
+      <h2 data-reveal style="margin-top: var(--s-3)">Trois façons de <em>travailler avec nous.</em></h2>
+    </div>
+    <p class="lede" data-reveal>
+      Selon votre besoin, Ecocina intervient sur une seule étape ou sur l'ensemble du projet —
+      conception, sourcing, coordination fabrication et pose. Un seul interlocuteur du début à la fin.
+    </p>
+  </div>
+
+  <div class="offers-grid">
+    <article class="offer-card" data-reveal>
+      <span class="offer-num">01</span>
+      <h3>Conception</h3>
+      <p class="offer-sub">Vous avez déjà un exécutant, vous avez besoin d'un plan fiable.</p>
+      <ul class="offer-list">
+        <li>Relevé sur site</li>
+        <li>Plan technique &amp; implantation</li>
+        <li>Visuel 3D photoréaliste</li>
+        <li>Choix des matériaux</li>
+      </ul>
+      <div class="offer-price">300 à 600 DH<span>selon la taille du projet</span></div>
+      <a class="btn ghost" href="#contact">Demander une étude <span class="arrow">→</span></a>
+    </article>
+
+    <article class="offer-card is-highlight" data-reveal>
+      <span class="offer-num">02</span>
+      <h3>Conception + Sourcing</h3>
+      <p class="offer-sub">Vous exécutez, nous pilotons la conception et les achats.</p>
+      <ul class="offer-list">
+        <li>Tout le contenu de l'offre Conception</li>
+        <li>Sélection des fournisseurs adaptés à votre budget</li>
+        <li>Négociation des tarifs et délais</li>
+        <li>Coordination des commandes</li>
+      </ul>
+      <div class="offer-price">Forfait ou % convenu<span>selon le périmètre du projet</span></div>
+      <a class="btn" href="#contact">En discuter <span class="arrow">→</span></a>
+    </article>
+
+    <article class="offer-card" data-reveal>
+      <span class="offer-num">03</span>
+      <h3>Projet clé en main</h3>
+      <p class="offer-sub">Vous confiez le projet, nous livrons la cuisine posée.</p>
+      <ul class="offer-list">
+        <li>Conception &amp; sourcing complets</li>
+        <li>Caissons, façades, quincaillerie, plan de travail</li>
+        <li>Livraison &amp; pose coordonnées</li>
+        <li>Suivi jusqu'à la réception</li>
+      </ul>
+      <div class="offer-price">À partir de 25&nbsp;000 DH<span>devis après étude</span></div>
+      <a class="btn" href="#contact">Démarrer mon projet <span class="arrow">→</span></a>
+    </article>
+  </div>
+
+  <p class="offers-note" data-reveal>
+    Sur l'offre « Projet clé en main », un acompte est demandé à la commande&nbsp;; le solde est réglé par étapes, jamais avant la livraison finale.
+  </p>
+</section>
+
+<style>
+  .offers { padding-top: var(--s-7); padding-bottom: var(--s-7); }
+  .offers-grid {
+    margin-top: var(--s-6);
+    display: grid; gap: var(--gap-md);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) { .offers-grid { grid-template-columns: repeat(3, 1fr); gap: var(--s-3); } }
+  .offer-card {
+    display: flex; flex-direction: column;
+    padding: var(--s-4);
+    background: var(--paper);
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius-lg);
+    transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+  }
+  .offer-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); }
+  .offer-card.is-highlight { border-color: var(--accent); }
+  .offer-num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; color: var(--ink-mute); }
+  .offer-card h3 { margin-top: var(--s-2); font-size: var(--t-h4); }
+  .offer-sub { margin-top: var(--gap-sm); color: var(--ink-soft); font-size: 14px; line-height: 1.5; min-height: 42px; }
+  .offer-list { list-style: none; padding: 0; margin: var(--s-3) 0 0; display: grid; gap: 10px; }
+  .offer-list li { position: relative; padding-left: 20px; font-size: 14px; color: var(--ink-soft); }
+  .offer-list li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
+  .offer-price { margin-top: var(--s-4); padding-top: var(--gap-sm); border-top: 1px solid var(--line-soft); font-family: var(--mono); font-size: 15px; font-weight: 500; color: var(--ink); }
+  .offer-price span { display: block; margin-top: 4px; font-family: var(--sans); font-size: 12px; font-weight: 400; color: var(--ink-mute); }
+  .offer-card .btn { margin-top: var(--s-4); align-self: flex-start; }
+  .offers-note { margin-top: var(--s-5); font-size: 13px; color: var(--ink-mute); max-width: 640px; }
+</style>
+
+<!-- =========== LUXURY PORTFOLIO — IMMERSIVE GALLERY =========== -->
+<section id="portfolio" data-screen-label="portfolio">
+  <div class="portfolio-hero">
+    <h2>Nos <em>réalisations</em></h2>
+    <p class="subtitle">Six cuisines qui incarnent notre savoir-faire. Chaque projet, une alliance de design réfléchi, de matériaux premium et d'exécution impeccable.</p>
+  </div>
+  <div class="portfolio-gallery"></div>
+  <div class="portfolio-progress">
+    <div class="progress-dots"></div>
+  </div>
+</section>
+
+<!-- PORTFOLIO CLOSER CTA -->
+<section class="portfolio-closer">
+  <span class="portfolio-closer-eyebrow">Prochaine étape</span>
+  <h3>Prêt à créer votre cuisine ?</h3>
+  <p class="portfolio-closer-text">
+    Chaque projet commence par une conversation — votre vie, vos matériaux, vos envies.
+    Commençons par une consultation gratuite pour explorer les possibilités.
+  </p>
+  <button class="portfolio-closer-btn">
+    Demandez votre consultation design gratuite
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="opacity: 0.7;">
+      <path d="M1 8h12m-3-3l3 3-3 3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</section>
+
+<!-- =========== FAQ =========== -->
+<section class="faq wrap" id="faq" data-screen-label="08 FAQ">
+  <div class="shead">
+    <div>
+      <span class="eyebrow" data-reveal>07 — Questions fréquentes</span>
       <h2 data-reveal style="margin-top: var(--s-3)">Vos questions, <em>nos réponses.</em></h2>
     </div>
   </div>
@@ -2976,27 +2671,28 @@ footer {
     <details class="q" data-reveal>
       <summary>Quelle garantie offrez-vous sur vos produits ?</summary>
       <p>
-        Tous nos produits bénéficient d'une <strong>garantie de 10 ans</strong> sur les structures (caissons) et les quincailleries BLUM (tiroirs, charnières). Nos façades sont garanties <strong>5 ans</strong> contre les défauts de fabrication. Cette garantie couvre les vices cachés et les problèmes de fonctionnement. En cas de problème, notre équipe intervient directement — pas de frais supplémentaires si le défaut relève de notre responsabilité.
+        Tous nos produits bénéficient d'une <strong>garantie de 10 ans</strong> sur les structures (caissons) et les quincailleries BLUM (tiroirs, charnières). Nos façades sont garanties <strong>5 ans</strong> contre les défauts de fabrication. Cette garantie couvre les vices cachés et les problèmes de fonctionnement. En cas de problème, nous coordonnons directement l'intervention avec le fournisseur ou le poseur concerné — pas de frais supplémentaires si le défaut relève de notre responsabilité.
       </p>
     </details>
 
     <details class="q" data-reveal>
       <summary>Combien de temps dure l'installation ?</summary>
       <p>
-        Une cuisine complète (de 3 à 6 mètres linéaires) est posée en <strong>3 à 5 jours</strong> selon la superficie, la complexité de l'installation, et les aménagements existants. Nos équipes travaillent du lundi au samedi. Après la pose, nous effectuons un test complet (tiroirs, portes, plan de travail) — vous ne partez pas sans avoir validé le résultat. Nous vous communiquons un planning précis lors de la visite technique gratuite initiale.
+        Une cuisine complète (de 3 à 6 mètres linéaires) est posée en <strong>3 à 5 jours</strong> selon la superficie, la complexité de l'installation, et les aménagements existants. Nos poseurs partenaires travaillent du lundi au samedi. Après la pose, nous effectuons un test complet (tiroirs, portes, plan de travail) — vous ne partez pas sans avoir validé le résultat. Nous vous communiquons un planning précis lors de la visite technique gratuite initiale.
       </p>
     </details>
 
     <details class="q" data-reveal>
       <summary>Comment obtenir un devis ? Combien ça coûte ?</summary>
       <p>
-        Le devis est <strong>100% gratuit et sans engagement</strong>. Voici le process&nbsp;:
+        Le premier contact et la pré-estimation sont <strong>100% gratuits et sans engagement</strong>. Voici le process&nbsp;:
       </p>
       <ol style="margin-top: var(--s-2);">
-        <li>Contactez-nous via le formulaire ou WhatsApp</li>
+        <li>Contactez-nous via le formulaire ou WhatsApp — bref appel découverte</li>
         <li>Nous fixons une visite technique (gratuite, 1h environ)</li>
         <li>Nous relevons vos dimensions, analysons votre espace, discutons de vos besoins</li>
-        <li>Vous recevez un devis chiffré + un plan 3D</li>
+        <li>Vous recevez une pré-estimation budgétaire gratuite</li>
+        <li>Si vous souhaitez aller plus loin, nous réalisons l'étude complète (plan 3D détaillé + devis chiffré poste par poste) pour un forfait de <strong>300 à 600 DH</strong> selon la complexité — <strong>entièrement déduit</strong> de votre projet si vous nous confiez la réalisation</li>
         <li>À partir de ce moment, vous décidez — sans pression</li>
       </ol>
       <p style="margin-top: var(--s-2);">
@@ -3006,124 +2702,11 @@ footer {
   </div>
 </section>
 
-<!-- =========== TESTIMONIALS — social proof ===========
-     Inspired by X's "engagement signals" principle: showcase the strongest
-     positive signals (real client experiences) to reduce friction at the
-     conversion point. -->
-<section class="testimonials wrap" id="testimonials" data-screen-label="10b testimonials" itemscope itemtype="https://schema.org/LocalBusiness">
-  <meta itemprop="name" content="Ecocina">
-  <div class="shead">
-    <div>
-      <span class="eyebrow" data-reveal>10b — Ils nous ont fait confiance</span>
-      <h2 data-reveal style="margin-top: var(--s-3)">Ce que disent <em>nos clients.</em></h2>
-    </div>
-    <p class="lede" data-reveal>
-      Chaque projet est une rencontre. Voici les mots de celles et ceux qui nous ont confié leur cuisine.
-    </p>
-  </div>
-
-  <div class="testimonial-grid">
-    <article class="testimonial-card" data-reveal itemprop="review" itemscope itemtype="https://schema.org/Review">
-      <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
-      <blockquote itemprop="reviewBody">
-        « Plan 3D ultra précis, conseils matériaux pointus, pose impeccable en 4 jours.
-        Notre cuisine est devenue le cœur de la maison — exactement comme imaginé. »
-      </blockquote>
-      <footer class="testimonial-meta">
-        <strong itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Salma B.</span></strong>
-        <span>Cuisine îlot · Casablanca</span>
-      </footer>
-      <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" content="5">
-    </article>
-
-    <article class="testimonial-card" data-reveal itemprop="review" itemscope itemtype="https://schema.org/Review">
-      <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
-      <blockquote itemprop="reviewBody">
-        « J'ai sollicité trois cuisinistes. Ecocina a été le seul à venir mesurer
-        avant de chiffrer. Devis transparent, finitions au cordeau, équipe ponctuelle. »
-      </blockquote>
-      <footer class="testimonial-meta">
-        <strong itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Karim L.</span></strong>
-        <span>Cuisine linéaire + dressing · Rabat</span>
-      </footer>
-      <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" content="5">
-    </article>
-
-    <article class="testimonial-card" data-reveal itemprop="review" itemscope itemtype="https://schema.org/Review">
-      <div class="stars" aria-label="5 étoiles sur 5">★★★★★</div>
-      <blockquote itemprop="reviewBody">
-        « Caissons hydrofuges parfaitement adaptés à notre humidité côtière.
-        Six mois après, aucun gonflement, aucun jeu sur les portes. Du sérieux. »
-      </blockquote>
-      <footer class="testimonial-meta">
-        <strong itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Hicham M.</span></strong>
-        <span>Cuisine + salle de bain · Tanger</span>
-      </footer>
-      <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating" content="5">
-    </article>
-  </div>
-</section>
-
-<style>
-  .testimonials { padding-top: var(--s-7); padding-bottom: var(--s-7); }
-  .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--s-5);
-    margin-top: var(--s-6);
-  }
-  .testimonial-card {
-    background: var(--paper);
-    border: 1px solid var(--line-soft);
-    border-radius: var(--radius, 8px);
-    padding: var(--s-5);
-    display: flex;
-    flex-direction: column;
-    gap: var(--s-3);
-    transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
-  }
-  .testimonial-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 18px 40px -22px rgba(26,26,27,.18);
-    border-color: var(--line);
-  }
-  .testimonial-card .stars {
-    color: var(--warm);
-    font-size: 18px;
-    letter-spacing: 2px;
-    line-height: 1;
-  }
-  .testimonial-card blockquote {
-    font-family: var(--display);
-    font-style: italic;
-    font-size: clamp(17px, 1.2vw + 12px, 21px);
-    line-height: 1.45;
-    color: var(--ink-soft);
-    margin: 0;
-  }
-  .testimonial-card .testimonial-meta {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    font-size: 13px;
-    color: var(--ink-mute);
-    margin-top: auto;
-    padding-top: var(--s-3);
-    border-top: 1px solid var(--line-soft);
-  }
-  .testimonial-card .testimonial-meta strong {
-    color: var(--ink);
-    font-weight: 600;
-    font-family: var(--sans);
-    font-style: normal;
-  }
-</style>
-
 <!-- =========== CONTACT FORM =========== -->
-<section class="contact-form-section wrap" data-screen-label="11 contact-form">
+<section class="contact-form-section wrap" data-screen-label="09 contact-form">
   <div class="shead">
     <div>
-      <span class="eyebrow" data-reveal>11 — Contact</span>
+      <span class="eyebrow" data-reveal>08 — Contact</span>
       <h2 data-reveal style="margin-top: var(--s-3)">Parlons de votre <em>projet.</em></h2>
     </div>
     <p class="lede" data-reveal>
@@ -3173,32 +2756,32 @@ footer {
 </section>
 
 <!-- =========== CONTACT =========== -->
-<section class="contact-simple wrap" id="contact" data-screen-label="12 contact">
+<section class="contact-simple wrap" id="contact" data-screen-label="11 contact">
   <span class="eyebrow solo" data-reveal>Discutons</span>
   <h2 data-reveal>Prenons un café, dessinons votre <em>projet.</em></h2>
   <p class="contact-tagline" data-reveal>
-    Le devis et le plan 3D sont offerts, sans engagement.
+    L'appel découverte et la pré-estimation sont offerts, sans engagement.
   </p>
   <div class="contact-actions" data-reveal>
-    <a href="https://wa.me/212600076274" target="_blank" class="btn wa">
+    <a href="https://wa.me/212779826281" target="_blank" class="btn wa">
       💬 Nous écrire sur WhatsApp <span class="arrow">→</span>
     </a>
-    <a href="tel:+212645633243" class="btn ghost">
-      Appeler · 06 45 63 32 43
+    <a href="tel:+212779826281" class="btn ghost">
+      Appeler · 07 79 82 62 81
     </a>
   </div>
   <p class="contact-phone" data-reveal>
-    Showroom Casablanca · Route d'El Jadida · Lun–Sam 9 h – 19 h
+    Casablanca et région · Sur rendez-vous · Lun–Sam 9 h – 19 h
   </p>
 </section>
 
 <!-- =========== NEWSLETTER / BROCHURE — Lead capture ===========
      X algorithm parallel: build the "user base" (email list) over time so future
      campaigns have a warm audience to retarget. PDF brochure = lead magnet. -->
-<section class="newsletter wrap" id="newsletter" data-screen-label="12b newsletter">
+<section class="newsletter wrap" id="newsletter" data-screen-label="11b newsletter">
   <div class="newsletter-inner">
     <div class="newsletter-copy">
-      <span class="eyebrow" data-reveal>12b — Inspirations</span>
+      <span class="eyebrow" data-reveal>10b — Inspirations</span>
       <h2 data-reveal>Restez inspiré, <em>avant tout le monde.</em></h2>
       <p class="lede" data-reveal>
         Nouvelles réalisations, tendances matériaux, conseils d'aménagement.
@@ -3365,7 +2948,7 @@ footer {
 </script>
 
 <!-- =========== FOOTER =========== -->
-<footer data-screen-label="13 footer">
+<footer data-screen-label="12 footer">
   <div class="foot-inner">
     <div class="foot-brand">
       <div class="name">Ecocina</div>
@@ -3377,21 +2960,21 @@ footer {
       <a href="#services">Dressings</a>
       <a href="#services">Salles de bain</a>
       <a href="#construction">Caissons hydrofuges</a>
-      <a href="#facades">Façades</a>
       <a href="#couleurs">Couleurs</a>
     </div>
     <div class="foot-col">
       <h3>Maison</h3>
       <a href="#process">Notre démarche</a>
+      <a href="#offers">Nos formules</a>
       <a href="#portfolio">Réalisations</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
-      <span>Showroom Casablanca</span>
+      <span>Casablanca · Sur rendez-vous</span>
     </div>
     <div class="foot-col">
       <h3>Joindre l'équipe</h3>
-      <a href="tel:+212645633243">+212 6 45 63 32 43</a>
-      <a href="https://wa.me/212600076274">WhatsApp · 06 00 07 62 74</a>
+      <a href="tel:+212779826281">+212 7 79 82 62 81</a>
+      <a href="https://wa.me/212779826281">WhatsApp · 07 79 82 62 81</a>
       <a href="mailto:contact@ecocinacom.com">contact@ecocinacom.com</a>
       <a href="https://www.facebook.com/profile.php?id=61589816366067" target="_blank" rel="noopener">Facebook</a>
       <a href="https://www.instagram.com/ecocina_com/" target="_blank" rel="noopener">Instagram</a>
@@ -3406,12 +2989,12 @@ footer {
 
 <!-- =========== MOBILE CALL BAR =========== -->
 <div class="callbar">
-  <a class="btn wa" href="https://wa.me/212600076274">WhatsApp</a>
+  <a class="btn wa" href="https://wa.me/212779826281">WhatsApp</a>
   <a class="btn" href="#contact">Devis gratuit</a>
 </div>
 
 <!-- =========== FLOATING WHATSAPP BUTTON (DESKTOP) =========== -->
-<a href="https://wa.me/212600076274" target="_blank" rel="noopener" class="floating-wa"
+<a href="https://wa.me/212779826281" target="_blank" rel="noopener" class="floating-wa"
    title="Contactez-nous sur WhatsApp" aria-label="Contactez-nous sur WhatsApp">
   <span aria-hidden="true">💬</span>
 </a>
@@ -3494,10 +3077,9 @@ footer {
       track('social_click', { network: 'instagram' });
     } else if (href.includes('facebook.com')) {
       track('social_click', { network: 'facebook' });
-    } else if (a.closest('.tier')) {
-      const eyebrow = a.closest('.tier').querySelector('.tier-eyebrow');
-      track('pricing_cta_click', { tier: eyebrow ? eyebrow.textContent.trim() : '' });
-    } else if (a.closest('.portfolio-closer')) {
+    } else if (a.classList.contains('portfolio-cta')) {
+      track('portfolio_cta_click', {});
+    } else if (a.classList.contains('portfolio-closer-btn')) {
       track('portfolio_closer_click', {});
     }
   });
@@ -3626,77 +3208,164 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<!-- =========== RÉALISATIONS — sticky scene controller ===========
-     Drives the editorial portfolio: switches the active scene as each
-     chapter crosses mid-viewport, updates the stamp (n° / année / ville),
-     plays only the visible video and fires a GA4 signal per project. -->
 <script>
-(function () {
-  const chapters = Array.from(document.querySelectorAll('.portfolio-v2-chapter'));
-  const scenes = Array.from(document.querySelectorAll('.portfolio-v2-frame .scene'));
-  if (!chapters.length || !scenes.length) return;
+class PortfolioGallery{constructor(){this.projects=[{id:'kitchen-1',title:'Élégance Anthracite',materials:'Façade gris anthracite mat Woodimp 22 mm, caisson hydrofuge gris',philosophy:'Plan de travail en céramique Calacatta Grey avec accessoires d\'angles intégrés.',optimization:'Finitions soignées et matériaux haut de gamme pour un rendu épuré et durable.',details:'Façade gris anthracite mat Woodimp 22 mm d\'épaisseur et caisson hydrofuge gris avec plan de travail en céramique Calacatta Grey avec accessoires d\'angles.'},{id:'kitchen-2',title:'Noyer & Noir',materials:'Noyer American Egger, noir mat Egger 18 mm, verre sécurit fumé',philosophy:'Mélange raffiné entre chaleur du bois et profondeur du noir pour un espace unique.',optimization:'Plan de travail en Dekton Orinika pour une résistance et une esthétique sans compromis.',details:'Mélange de noyer American Egger avec le noir mat Egger de 18 mm, portes en verre sécurit fumé avec plan de travail en Dekton Orinika.'},{id:'kitchen-3',title:'Clarté Brillante',materials:'Façade gris clair high-glossy Woodipro, caisson en latte',philosophy:'La brillance du gris clair apporte lumière et modernité à chaque espace de cuisine.',optimization:'Plan de travail en Coverlam pour un rendu minimaliste et facile d\'entretien.',details:'Façade gris clair high-glossy Woodipro, caisson en latte et plan de travail en Coverlam.'},{id:'kitchen-4',title:'Ice & Boisé',materials:'Façade Ice gris mat Woodimp 22 mm, boisé Richmond 22 mm',philosophy:'Alliance subtile entre le froid du gris glacé et la chaleur du boisé Richmond.',optimization:'Plan de travail en quartz Compac Luna pour un résultat élégant et pérenne.',details:'Mélange entre façade Ice gris mat Woodimp 22 mm et boisé Richmond 22 mm avec plan de travail en quartz Compac Luna.'},{id:'kitchen-5',title:'Chêne & Laqué',materials:'Façade Egger poignée intégrée chêne, laqué blanc brillant 5 couches',philosophy:'Contraste réussi entre la noblesse du chêne naturel et la pureté du blanc brillant.',optimization:'Plan de travail en quartz Estatuario pour une touche de luxe intemporelle.',details:'Façade Egger poignée intégrée chêne et façade laqué blanc brillant 5 couches avec plan de travail en quartz Estatuario.'},{id:'kitchen-6',title:'Luna & Walnut',materials:'Façade gris Luna, boisé walnut',philosophy:'Harmonie entre le gris doux du Luna et la richesse du boisé walnut.',optimization:'Plan de travail en quartz Ice Grey Compac pour une finition contemporaine et élégante.',details:'Façade gris Luna avec une touche de boisé walnut et plan de travail en quartz Ice Grey Compac.'}];this.currentIndex=0;this.init()}init(){this.cacheElements();this.createProjectHTML();this.setupScrollListener();this.setupProgressDots();this.setupVideoPlayback();this.setupCloserBtn()}cacheElements(){this.gallery=document.querySelector('.portfolio-gallery');this.progressContainer=document.querySelector('.progress-dots');this.items=[]}createProjectHTML(){const html=this.projects.map((project,idx)=>`<div class="portfolio-item" data-index="${idx}"><div class="portfolio-item-video-wrapper"><video class="portfolio-item-video" muted playsinline preload="${idx===0?'metadata':'none'}" poster="./videos/kitchen-${idx+1}-poster.jpg"><source src="./videos/kitchen-${idx+1}.mp4" type="video/mp4"></video></div><div class="portfolio-item-overlay"><div class="portfolio-item-content"><h3 class="portfolio-item-title">${project.title}</h3><div class="portfolio-item-divider"></div><div class="portfolio-item-details"><div class="detail-item"><div class="detail-label">Matériaux</div><div class="detail-value">${project.materials}</div></div><div class="detail-item"><div class="detail-label">Philosophie</div><div class="detail-value">${project.philosophy}</div></div><div class="detail-item"><div class="detail-label">Optimisation de l'espace</div><div class="detail-value">${project.optimization}</div></div><div class="detail-item"><div class="detail-label">Détails</div><div class="detail-value">${project.details}</div></div></div><button class="portfolio-cta" onclick="portfolioGallery.scrollToCloser()">Découvrir Mon Processus<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M1 8h12m-3-3l3 3-3 3"/></svg></button></div></div></div>`).join('');this.gallery.innerHTML=html;this.items=Array.from(this.gallery.querySelectorAll('.portfolio-item'))}setupScrollListener(){let lastScrollY=0;window.addEventListener('scroll',()=>{const scrollY=window.scrollY;lastScrollY=scrollY;this.items.forEach((item,idx)=>{const rect=item.getBoundingClientRect();const distance=Math.abs(rect.top+rect.height/2-window.innerHeight/2);const threshold=window.innerHeight*0.35;distance<threshold?item.classList.add('in-view'):item.classList.remove('in-view')});setTimeout(()=>this.playVisibleVideo(),100)})}setupProgressDots(){const dots=this.projects.map((_,idx)=>`<div class="progress-dot" data-index="${idx}" onclick="portfolioGallery.scrollToProject(${idx})"></div>`).join('');if(this.progressContainer)this.progressContainer.innerHTML=dots}updateProgressDot(index){document.querySelectorAll('.progress-dot').forEach((dot,idx)=>{dot.classList.toggle('active',idx===index)});this.currentIndex=index}setupVideoPlayback(){window.addEventListener('scroll',()=>this.playVisibleVideo());this.playVisibleVideo()}playVisibleVideo(){this.items.forEach(item=>{const video=item.querySelector('.portfolio-item-video');if(!video)return;const rect=item.getBoundingClientRect();const isVisible=rect.top<window.innerHeight&&rect.bottom>0;isVisible?video.play().catch(()=>{}):video.pause()})}scrollToProject(index){if(index>=0&&index<this.items.length)this.items[index].scrollIntoView({behavior:'smooth',block:'center'})}scrollToCloser(){const closer=document.querySelector('.portfolio-closer');if(closer)closer.scrollIntoView({behavior:'smooth',block:'start'})}setupCloserBtn(){const btn=document.querySelector('.portfolio-closer-btn');if(btn)btn.addEventListener('click',()=>{const contact=document.querySelector('#contact');if(contact)contact.scrollIntoView({behavior:'smooth',block:'start'});else document.querySelector('.btn.wa')?.click()})}}document.addEventListener('DOMContentLoaded',()=>{window.portfolioGallery=new PortfolioGallery()});
+</script>
 
-  const numEl = document.getElementById('projNum');
-  const yearEl = document.getElementById('projYear');
-  const cityEl = document.getElementById('projCity');
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+<!-- =========== PORTFOLIO INTELLIGENCE (X Algorithm Principles #2 & #3) ===========
+     Lightweight candidate-ranking adapted for a small business site.
+     - Tracks per-project dwell time and replays it across visits (localStorage)
+     - Surfaces the most-admired project with a badge (engagement-based ranking)
+     - Swaps the closer CTA based on scroll depth (cold visitor vs warm lead)
+     - Fires watch-percent events to GA4 for downstream analysis -->
+<style>
+  .popularity-badge {
+    position: absolute;
+    top: max(20px, env(safe-area-inset-top, 20px));
+    left: 24px;
+    z-index: 5;
+    background: rgba(184, 115, 64, 0.92);
+    color: #fbf8f1;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 999px;
+    backdrop-filter: blur(8px);
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity .6s ease, transform .6s ease;
+    pointer-events: none;
+  }
+  .portfolio-item.in-view .popularity-badge {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .portfolio-item { position: relative; }
+</style>
+
+<script>
+(function() {
+  const STORAGE_KEY = 'ecocina_portfolio_engagement_v1';
+  const BADGE_THRESHOLD = 3; // need at least 3s of dwell to qualify
+
+  // Load engagement history (cumulative, like X's user history)
+  let engagement = {};
+  try {
+    engagement = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+  } catch (e) {}
+
+  const persist = () => {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(engagement)); } catch (e) {}
+  };
+
   const track = (eventName, params) => {
     if (typeof gtag === 'function') gtag('event', eventName, params || {});
   };
 
-  const playScene = (idx) => {
-    scenes.forEach((scene, i) => {
-      const video = scene.querySelector('video');
-      if (!video) return;
-      if (i === idx && !reduceMotion.matches) video.play().catch(() => {});
-      else video.pause();
-    });
-  };
+  // Wait for the portfolio gallery to be built, then enhance it
+  const enhance = () => {
+    const items = document.querySelectorAll('.portfolio-item');
+    if (!items.length) return false;
 
-  let current = -1;
-  const activate = (idx) => {
-    if (idx === current || idx < 0 || !scenes[idx]) return;
-    current = idx;
-    chapters.forEach((c, i) => c.classList.toggle('is-active', i === idx));
-    scenes.forEach((s, i) => s.classList.toggle('is-active', i === idx));
-    playScene(idx);
-    if (numEl) numEl.textContent = String(idx + 1).padStart(2, '0');
-    const data = chapters[idx] ? chapters[idx].dataset : {};
-    if (yearEl && data.year) yearEl.textContent = data.year;
-    if (cityEl && data.city) cityEl.textContent = data.city;
-  };
+    // --- Dwell-time tracking per project (candidate scoring) ---
+    const dwellStart = new WeakMap();
+    const watchMilestones = new WeakMap();
 
-  activate(0);
+    const dwellIO = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = `kitchen-${parseInt(entry.target.dataset.index, 10) + 1}`;
+        if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+          dwellStart.set(entry.target, Date.now());
+        } else if (dwellStart.has(entry.target)) {
+          const elapsed = (Date.now() - dwellStart.get(entry.target)) / 1000;
+          engagement[id] = (engagement[id] || 0) + elapsed;
+          persist();
+          dwellStart.delete(entry.target);
 
-  if ('IntersectionObserver' in window) {
-    const chapterIO = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const idx = chapters.indexOf(entry.target);
-        if (idx !== current) track('portfolio_project_viewed', { project: idx + 1 });
-        activate(idx);
-      });
-    }, { rootMargin: '-45% 0px -45% 0px' });
-    chapters.forEach((chapter) => chapterIO.observe(chapter));
-
-    // Park every scene video while the section is off screen
-    const section = document.querySelector('.portfolio-v2');
-    if (section) {
-      const sectionIO = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            playScene(current);
-          } else {
-            scenes.forEach((scene) => {
-              const video = scene.querySelector('video');
-              if (video) video.pause();
+          // Fire a watched event if user dwelled > 2s
+          if (elapsed > 2) {
+            const video = entry.target.querySelector('video');
+            const watchPct = video && video.duration > 0
+              ? Math.min(100, Math.round((video.currentTime / video.duration) * 100))
+              : 0;
+            track('portfolio_video_watched', {
+              project: id,
+              dwell_seconds: Math.round(elapsed),
+              watch_pct: watchPct
             });
           }
-        });
+        }
       });
-      sectionIO.observe(section);
+    }, { threshold: [0, 0.6, 0.9] });
+
+    items.forEach(item => dwellIO.observe(item));
+
+    // --- "Le plus admiré" badge on the top-engagement project ---
+    const renderBadge = () => {
+      // Find top project
+      const topId = Object.entries(engagement)
+        .filter(([, v]) => v >= BADGE_THRESHOLD)
+        .sort((a, b) => b[1] - a[1])[0];
+
+      // Clear any existing badges
+      document.querySelectorAll('.popularity-badge').forEach(b => b.remove());
+
+      if (!topId) return;
+
+      const topIdx = parseInt(topId[0].split('-')[1], 10) - 1;
+      const targetItem = items[topIdx];
+      if (!targetItem) return;
+
+      const badge = document.createElement('span');
+      badge.className = 'popularity-badge';
+      badge.textContent = '★ Le plus admiré';
+      targetItem.appendChild(badge);
+    };
+
+    renderBadge();
+    // Re-render every 5s to reflect ongoing dwell
+    setInterval(renderBadge, 5000);
+
+    // --- Smart CTA: swap closer CTA based on scroll depth ---
+    const closerBtn = document.querySelector('.portfolio-closer-btn');
+    if (closerBtn) {
+      const original = closerBtn.innerHTML;
+      const ctaState = { mode: 'explore' };
+
+      const updateCTA = () => {
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = (window.scrollY / docHeight) * 100;
+        const newMode = pct > 60 ? 'convert' : 'explore';
+        if (newMode === ctaState.mode) return;
+        ctaState.mode = newMode;
+
+        if (newMode === 'convert') {
+          closerBtn.innerHTML = `Demandez votre devis gratuit
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" style="opacity:0.7;">
+              <path d="M1 8h12m-3-3l3 3-3 3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>`;
+          track('cta_variant_shown', { variant: 'convert' });
+        } else {
+          closerBtn.innerHTML = original;
+        }
+      };
+      window.addEventListener('scroll', updateCTA, { passive: true });
+      updateCTA();
     }
-  }
+
+    return true;
+  };
+
+  // The gallery is rendered inside DOMContentLoaded — wait for it
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!enhance()) {
+      // Retry shortly in case the inline gallery script fires after us
+      setTimeout(enhance, 100);
+      setTimeout(enhance, 500);
+    }
+  });
 })();
 </script>
 
