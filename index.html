@@ -2779,10 +2779,38 @@ footer {
       <label for="message">Décrivez votre projet</label>
       <textarea id="message" name="message" placeholder="Dimensions, style, plan existant, contraintes particulières..." rows="5"></textarea>
     </div>
+    <div class="form-group form-consent">
+      <label for="consent">
+        <input type="checkbox" id="consent" name="consent" required value="oui">
+        J'ai lu la <a href="mentions-legales.html#confidentialite" target="_blank">politique de confidentialité</a> et j'accepte le traitement de mes données afin qu'Ecocina puisse répondre à ma demande.
+      </label>
+    </div>
     <div id="form-message" style="display: none; padding: var(--s-3); border-radius: var(--radius); margin-top: var(--s-3); font-size: 14px;"></div>
     <button type="submit" class="btn form-submit">Soumettre <span class="arrow">→</span></button>
   </form>
 </section>
+
+<style>
+  .form-consent label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family: var(--sans);
+    font-size: 13px;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    cursor: pointer;
+  }
+  .form-consent input[type="checkbox"] {
+    width: 18px; height: 18px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    accent-color: var(--accent);
+  }
+  .form-consent a { text-decoration: underline; color: var(--ink); }
+</style>
 
 <!-- =========== CONTACT =========== -->
 <section class="contact-simple wrap" id="contact" data-screen-label="11 contact">
