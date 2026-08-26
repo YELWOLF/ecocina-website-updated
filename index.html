@@ -586,7 +586,7 @@ p { margin: 0; }
   .hero-sub { font-size: 13px; line-height: 1.5; }
   .hero-mid { padding-bottom: 16px; }
   .hero-ctas { flex-direction: column; width: 100%; }
-  .hero-ctas .btn { width: 100%; text-align: center; padding: 16px 18px; }
+  .hero-ctas .btn { width: 100%; text-align: center; justify-content: center; white-space: normal; padding: 16px 18px; }
   .form { padding: var(--s-3); gap: var(--s-2); }
   .field input, .field select, .field textarea { padding: 14px 12px; }
   .form-actions { gap: 10px; }
@@ -1321,7 +1321,7 @@ footer {
 }
 
 .portfolio-hero {
-  height: 60vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1665,7 +1665,7 @@ footer {
 
 @media (max-width: 900px) {
   .portfolio-hero {
-    height: 50vh;
+    min-height: 50vh;
     margin-bottom: var(--gap-md);
   }
 
@@ -1710,7 +1710,7 @@ footer {
 
 @media (max-width: 480px) {
   .portfolio-hero {
-    height: 40vh;
+    min-height: 40vh;
   }
 
   .portfolio-hero h2 {
