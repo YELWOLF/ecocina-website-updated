@@ -2,48 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ecocinacom.com/</loc>
-    <lastmod>2026-05-17</lastmod>
-    <priority>1.0</priority>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ecocinacom.com/#services</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ecocinacom.com/#portfolio</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://ecocinacom.com/#construction</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ecocinacom.com/#facades</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ecocinacom.com/#couleurs</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ecocinacom.com/#process</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ecocinacom.com/#testimonials</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ecocinacom.com/#faq</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://ecocinacom.com/#contact</loc>
-    <priority>0.9</priority>
+    <loc>https://ecocinacom.com/a-propos.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ecocinacom.com/mentions-legales.html</loc>
-    <priority>0.3</priority>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
   </url>
 </urlset>

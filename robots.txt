@@ -1,6 +1,13 @@
+# Ecocina — robots.txt
+# Politique GPTBot (entraînement) : à décider séparément. Ouvert pour l'instant.
+
 User-agent: *
 Allow: /
 Disallow: /uploads/*.pdf$
 Disallow: /uploads/*.md$
+
+# ChatGPT Search — autorisé explicitement pour l'éligibilité aux citations
+User-agent: OAI-SearchBot
+Allow: /
 
 Sitemap: https://ecocinacom.com/sitemap.xml
